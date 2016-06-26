@@ -91,7 +91,7 @@ autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 let NERDTreeMapOpenExpl="j"
 
 " NERDCommentor
-map <C-/> \c
+map <C-c> \c
 
 " Always show statusline
 set laststatus=2
