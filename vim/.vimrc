@@ -76,7 +76,7 @@ vnoremap Y H
 " space space to go to the previous buffer
 nmap <space><space> :b#<cr>
 
-" show existing tab with 4 spaces width
+" show existing tab with 2 spaces width
 set tabstop=2
 set shiftwidth=2
 set expandtab
