@@ -74,3 +74,6 @@ kc-delete-pod-force() {
 kc-delete-configmap() {
     kubectl delete configmap "$1"
 }
+
+#API DOC
+PATH="$PATH:/Users/wasiqk/work/apidoc-cli/bin"

@@ -21,7 +21,7 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'kchmck/vim-coffee-script'
 Plugin 'tpope/vim-surround'
 Plugin 'scrooloose/nerdcommenter'
-
+Plugin 'derekwyatt/vim-scala'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -91,17 +91,18 @@ autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 let NERDTreeMapOpenExpl="j"
 
 " NERDCommentor
-map <C-c> \c
+map <C-c> <leader>c
+let g:NERDDefaultAlign = 'left'
 
 " Always show statusline
 set laststatus=2
 
 " gui settings
-if ((&t_Co == 256 || has('gui_running')) && $TERM_PROGRAM == 'iTerm.app')
-  colorscheme janah
+if (&t_Co == 256 || has('gui_running'))
+  set background=dark
+  colorscheme solarized
 else
   set t_Co=16
-  set background=light
   colorscheme janah
 endif
 
