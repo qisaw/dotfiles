@@ -19,6 +19,7 @@ alias glm="gulp --mocked"
 alias gp="git push"
 alias gpl="git pull"
 alias tm.ks='tmux kill-session'
+alias tm="tmux"
 
 parse_git_branch() {
 
