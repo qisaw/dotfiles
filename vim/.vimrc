@@ -73,7 +73,7 @@ vnoremap y h
 vnoremap H Y
 vnoremap Y H
 
-" spcae space to go to the previous buffer
+" space space to go to the previous buffer
 nmap <space><space> :b#<cr>
 
 " show existing tab with 4 spaces width
