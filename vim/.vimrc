@@ -75,7 +75,6 @@ vnoremap Y H
 
 " spcae space to go to the previous buffer
 nmap <space><space> :b#<cr>
-let g:javascript_conceal_arrow_function = "⇒"
 
 " show existing tab with 4 spaces width
 set tabstop=2
