@@ -22,6 +22,15 @@ Plugin 'kchmck/vim-coffee-script'
 Plugin 'tpope/vim-surround'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'derekwyatt/vim-scala'
+Plugin 'jiangmiao/auto-pairs'
+Plugin 'vitalk/vim-simple-todo'
+Plugin 'danro/rename.vim'
+Plugin 'leafgarland/typescript-vim'
+" You need to go into the repo and run make
+Plugin 'Shougo/vimproc.vim'
+Plugin 'Quramy/tsuquyomi'
+Plugin 'Shougo/unite.vim'
+Plugin 'mhartington/vim-typings'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -38,6 +47,7 @@ filetype plugin indent on    " required
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this linen 'tpope/vim-fugitive'
 
+let mapleader = ","
 nnoremap l o
 nnoremap o l
 nnoremap L O
@@ -120,6 +130,15 @@ let g:syntastic_check_on_wq = 0
 syntax on
 filetype on
 
+"control P open buffer mode
+map <C-P> :CtrlPMRUFiles<CR>
+
+"Typescript use jsx
+let g:typescript_compiler_options="--jsx"
+let g:tsuquyomi_disable_quickfix = 1
+let g:syntastic_typescript_checkers = ['tsuquyomi']
+
+"set all .es6 files to be javascript files
 au BufNewFile,BufRead *.es6 set filetype=javascript
 
 if executable('ag')

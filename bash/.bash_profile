@@ -1,5 +1,11 @@
 export JAVA_HOME=$(/usr/libexec/java_home)
 export ANDROID_HOME=/usr/local/Cellar/android-sdk/24.4.1/
+#API DOC
+PATH="$PATH:/Users/wasiqk/work/apidoc-cli/bin"
+
+# Set the default git editor to vim instead of vi
+export GIT_EDITOR=vim
+
 alias g="git"
 alias gc="git commit"
 alias gs="git status"
@@ -12,14 +18,24 @@ alias ghcb="git checkout -b"
 alias gb="git branch"
 alias gr="git reset"
 alias glb="gulp --backend=uat.movio.co --mode=engage"
+
 alias mmui="cd ~/work/mm-ui/"
-alias glu="gulp unit"
-alias glw="gulp unit:watch"
-alias glm="gulp --mocked"
+
 alias gp="git push"
+alias gpt="git push --follow-tags"
+alias gt="git tag"
 alias gpl="git pull"
+
 alias tm.ks='tmux kill-session'
 alias tm="tmux"
+
+alias kc=kubectl
+alias kca='kubectl apply -f'
+alias kcr='kubectl replace -f'
+alias kcg='kubectl get configmap'
+alias kcc='kubectl create -f'
+alias kcgp='kubectl get po'
+alias kcdp='kubectl describe po'
 
 parse_git_branch() {
 
@@ -40,13 +56,6 @@ kc-dev(){
 kc-prod() {
     kubectl config use-context movio-prod-us
 }
-alias kc=kubectl
-alias kca='kubectl apply -f'
-alias kcr='kubectl replace -f'
-alias kcg='kubectl get configmap'
-alias kcc='kubectl create -f'
-alias kcgp='kubectl get po'
-alias kcdp='kubectl describe po'
 kcpo() {
     if [ -z "$1" ]; then
         kubectl get po
@@ -76,5 +85,3 @@ kc-delete-configmap() {
     kubectl delete configmap "$1"
 }
 
-#API DOC
-PATH="$PATH:/Users/wasiqk/work/apidoc-cli/bin"
