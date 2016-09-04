@@ -21,8 +21,7 @@ alias glb="gulp --backend=uat.movio.co --mode=engage"
 
 alias mmui="cd ~/work/mm-ui/"
 
-alias gp="git push"
-alias gpt="git push --follow-tags"
+alias gp="git push --follow-tags"
 alias gt="git tag"
 alias gpl="git pull"
 
