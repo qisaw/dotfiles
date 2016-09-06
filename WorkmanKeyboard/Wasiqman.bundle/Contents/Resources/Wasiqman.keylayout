@@ -1,7 +1,7 @@
 <?xml version="1.1" encoding="UTF-8"?>
 <!DOCTYPE keyboard SYSTEM "file://localhost/System/Library/DTDs/KeyboardLayout.dtd">
-<!--Last edited by Ukelele version 3.1.0.102 on 2016-09-06 at 15:10 (NZST)-->
-<keyboard group="0" id="12580" name="Wasiqman" maxout="1">
+<!--Last edited by Ukelele version 3.1.0.102 on 2016-09-06 at 15:16 (NZST)-->
+<keyboard group="126" id="-13362" name="Wasiqman" maxout="1">
 	<layouts>
 		<layout first="0" last="0" mapSet="138" modifiers="30"/>
 	</layouts>
@@ -306,7 +306,7 @@
 			<key code="43" output=","/>
 			<key code="44" output="/"/>
 			<key code="45" action="10"/>
-			<key code="46" output="K"/>
+			<key code="46" output="L"/>
 			<key code="47" output="."/>
 			<key code="48" output="&#x0009;"/>
 			<key code="49" action="15"/>
