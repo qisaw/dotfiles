@@ -1,7 +1,7 @@
 export JAVA_HOME=$(/usr/libexec/java_home)
 export ANDROID_HOME=/usr/local/Cellar/android-sdk/24.4.1/
 #API DOC
-PATH="$PATH:/Users/wasiqk/work/apidoc-cli/bin"
+PATH="$PATH:/Users/wasiqkashkari/work/apidoc-cli/bin"
 
 # Set the default git editor to vim instead of vi
 export GIT_EDITOR=vim
@@ -45,7 +45,7 @@ parse_git_branch() {
 export PS1="\u@\h \W\[\033[32m\]\$(parse_git_branch)\[\033[00m\] $ "
 
 
-export NVM_DIR="/Users/wasiqk/.nvm"
+export NVM_DIR="/Users/wasiqkashkari/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 
 
