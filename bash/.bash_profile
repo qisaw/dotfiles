@@ -19,8 +19,6 @@ alias gb="git branch"
 alias gr="git reset"
 alias glb="gulp --backend=uat.movio.co --mode=engage"
 
-alias mmui="cd ~/work/mm-ui/"
-
 alias gp="git push --follow-tags"
 alias gt="git tag"
 alias gpl="git pull"
