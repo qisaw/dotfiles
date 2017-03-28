@@ -92,6 +92,9 @@ set shiftwidth=2
 set expandtab
 set nowrap
 set rtp+=~/Library/Python/2.7/lib/python/site-packages/powerline/bindings/vim/
+"if we use a capital it will look for case sensitive
+set ignorecase
+set smartcase
 
 " NERDTree Config
 map <C-n> :NERDTreeToggle<CR>
