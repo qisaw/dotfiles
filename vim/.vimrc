@@ -91,7 +91,7 @@ set tabstop=2
 set shiftwidth=2
 set expandtab
 set nowrap
-set rtp+=/Library/Python/2.7/site-packages/powerline/bindings/vim/
+set rtp+=~/Library/Python/2.7/lib/python/site-packages/powerline/bindings/vim/
 
 " NERDTree Config
 map <C-n> :NERDTreeToggle<CR>
