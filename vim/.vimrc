@@ -110,16 +110,18 @@ let g:NERDDefaultAlign = 'left'
 set laststatus=2
 
 " gui settings
-if (&t_Co == 256 || has('gui_running'))
+if (has('gui_running'))
   set background=dark
   colorscheme solarized
 else
-  set t_Co=16
-  colorscheme janah
+  colorscheme darkblue
 endif
 
 set nu
+set showmatch
 set guifont=Anonymice\ Powerline:h16
+"yank to clipboard
+set clipboard+=unnamed
 let g:syntastic_javascript_checkers = ['eslint']
 
 "set statusline+=%#warningmsg#
@@ -135,6 +137,8 @@ filetype on
 
 "control P open buffer mode
 map <C-P> :CtrlPMRUFiles<CR>
+"ignore node_modules
+set wildignore+=*/node_modules/*
 
 "Typescript use jsx
 let g:typescript_compiler_options="--jsx"
