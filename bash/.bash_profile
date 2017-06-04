@@ -1,5 +1,8 @@
 export JAVA_HOME=$(/usr/libexec/java_home)
-export ANDROID_HOME=/usr/local/Cellar/android-sdk/24.4.1/
+#export ANDROID_HOME=/usr/local/Cellar/android-sdk/24.4.1/
+export ANDROID_HOME="${HOME}/Library/Android/sdk"
+export PATH="$HOME/.fastlane/bin:$PATH"
+export ENVIRONMENT=dev
 #API DOC
 PATH="$PATH:/Users/wasiqkashkari/work/apidoc-cli/bin"
 
