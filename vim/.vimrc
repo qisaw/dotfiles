@@ -14,6 +14,7 @@ Plugin 'pangloss/vim-javascript'
 Plugin 'mhinz/vim-janah'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'scrooloose/syntastic'
+Plugin 'airblade/vim-gitgutter'
 Plugin 'moll/vim-node'
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'ctrlpvim/ctrlp.vim'
@@ -26,6 +27,7 @@ Plugin 'jiangmiao/auto-pairs'
 Plugin 'vitalk/vim-simple-todo'
 Plugin 'danro/rename.vim'
 Plugin 'leafgarland/typescript-vim'
+Plugin 'easymotion/vim-easymotion'
 " You need to go into the repo and run make
 Plugin 'Shougo/vimproc.vim'
 Plugin 'Quramy/tsuquyomi'
@@ -86,6 +88,21 @@ vnoremap Y H
 
 " space space to go to the previous buffer
 nmap <space><space> :b#<cr>
+" git gutter
+nmap <leader>hh <Plug>GitGutterNextHunk
+nmap <leader>HH <Plug>GitGutterPrevHunk
+
+" easy motion
+map  / <Plug>(easymotion-sn)
+omap / <Plug>(easymotion-tn)
+map  k <Plug>(easymotion-next)
+map  K <Plug>(easymotion-prev)
+map <leader><leader>L <Plug>(easymotion-bd-jk)
+map <leader><leader>L <Plug>(easymotion-overwin-line)
+
+nmap  <leader><leader>w <Plug>(easymotion-bd-w)
+nmap <leader><leader>w <Plug>(easymotion-overwin-w)
+let g:EasyMotion_smartcase = 1
 
 " show existing tab with 2 spaces width
 set tabstop=2
