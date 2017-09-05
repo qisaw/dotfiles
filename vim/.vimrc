@@ -33,6 +33,7 @@ Plugin 'Shougo/vimproc.vim'
 Plugin 'Quramy/tsuquyomi'
 Plugin 'Shougo/unite.vim'
 Plugin 'mhartington/vim-typings'
+Plugin 'jreybert/vimagit'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -95,8 +96,8 @@ nmap <leader>HH <Plug>GitGutterPrevHunk
 " easy motion
 map  / <Plug>(easymotion-sn)
 omap / <Plug>(easymotion-tn)
-map  k <Plug>(easymotion-next)
-map  K <Plug>(easymotion-prev)
+map  q <Plug>(easymotion-next)
+map  Q <Plug>(easymotion-prev)
 map <leader><leader>L <Plug>(easymotion-bd-jk)
 map <leader><leader>L <Plug>(easymotion-overwin-line)
 
