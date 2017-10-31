@@ -34,6 +34,8 @@ Plugin 'Quramy/tsuquyomi'
 Plugin 'Shougo/unite.vim'
 Plugin 'mhartington/vim-typings'
 Plugin 'jreybert/vimagit'
+Plugin 'flowtype/vim-flow'
+Plugin 'airblade/vim-rooter'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -86,6 +88,8 @@ vnoremap h y
 vnoremap y h
 vnoremap H Y
 vnoremap Y H
+nnoremap <leader>cd :cd %:p:h<CR>:pwd<CR>
+inoremap <leader><leader><space> <C-x><C-o>
 
 " space space to go to the previous buffer
 nmap <space><space> :b#<cr>
@@ -142,10 +146,11 @@ set guifont=Anonymice\ Powerline:h16
 "yank to clipboard
 set clipboard+=unnamed
 let g:syntastic_javascript_checkers = ['eslint']
+let g:syntastic_javascript_eslint_exe = 'node_modules/.bin/eslint'
 
-"set statusline+=%#warningmsg#
-"set statusline+=%{SyntasticStatuslineFlag()}
-"set statusline+=%*
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
 
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
@@ -163,6 +168,19 @@ set wildignore+=*/node_modules/*
 let g:typescript_compiler_options="--jsx"
 let g:tsuquyomi_disable_quickfix = 1
 let g:syntastic_typescript_checkers = ['tsuquyomi']
+
+"vim javascript
+let g:javascript_plugin_flow = 1
+let g:flow#autoclose = 1
+
+let g:javascript_conceal_function = "ƒ"
+let g:javascript_conceal_arrow_function = "λ"
+
+"set conceallevel=1
+
+"vim rooter
+let g:rooter_patterns = ['package.json', '.git/']
+let g:rooter_resolve_links = 1
 
 "set all .es6 files to be javascript files
 au BufNewFile,BufRead *.es6 set filetype=javascript

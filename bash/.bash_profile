@@ -29,7 +29,7 @@ function parse_git_branch {
 }
 
 function gcm {
-  git commit -m "$(parse_git_branch) $@"
+  git commit -m "\"$(parse_git_branch) "$*"\""
 }
 
 # Show git branch on command line
@@ -56,6 +56,10 @@ alias kcg='kubectl get configmap'
 alias kcc='kubectl create -f'
 alias kcgp='kubectl get po'
 alias kcdp='kubectl describe po'
+
+alias ave='aws-vault exec'
+alias avec='aws-vault exec capps-cat-admin --'
+alias aved='aws-vault exec capps-prod-admin --'
 
 #LOAD NVM
 export NVM_DIR="/Users/wasiqkashkari/.nvm"
