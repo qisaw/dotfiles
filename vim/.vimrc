@@ -11,6 +11,7 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'tpope/vim-fugitive'
 Plugin 'pangloss/vim-javascript'
+Plugin 'mxw/vim-jsx'
 Plugin 'mhinz/vim-janah'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'scrooloose/syntastic'
@@ -36,6 +37,12 @@ Plugin 'mhartington/vim-typings'
 Plugin 'jreybert/vimagit'
 Plugin 'flowtype/vim-flow'
 Plugin 'airblade/vim-rooter'
+Plugin 'ap/vim-css-color'
+Plugin 'nathanaelkane/vim-indent-guides'
+Plugin 'hashivim/vim-terraform'
+Plugin 'posva/vim-vue'
+Plugin 'othree/javascript-libraries-syntax.vim'
+Plugin 'prettier/vim-prettier', { 'oninstall': 'yarn install' }
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -92,7 +99,7 @@ nnoremap <leader>cd :cd %:p:h<CR>:pwd<CR>
 inoremap <leader><leader><space> <C-x><C-o>
 
 " space space to go to the previous buffer
-nmap <space><space> :b#<cr>
+nmap <leader><space> :b#<CR>
 " git gutter
 nmap <leader>hh <Plug>GitGutterNextHunk
 nmap <leader>HH <Plug>GitGutterPrevHunk
@@ -146,7 +153,9 @@ set guifont=Anonymice\ Powerline:h16
 "yank to clipboard
 set clipboard+=unnamed
 let g:syntastic_javascript_checkers = ['eslint']
-let g:syntastic_javascript_eslint_exe = 'node_modules/.bin/eslint'
+let g:syntastic_javascript_eslint_exe = 'node_modules/.bin/eslint --no-ignore'
+
+set suffixesadd+=.vue
 
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
@@ -182,6 +191,20 @@ let g:javascript_conceal_arrow_function = "λ"
 let g:rooter_patterns = ['package.json', '.git/']
 let g:rooter_resolve_links = 1
 
+let g:jsx_ext_required = 0
+
+let g:indent_guides_enable_on_vim_startup = 1
+
+"let g:indent_guides_auto_colors = 0
+"autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  guibg=#ffccff   ctermbg=3
+"autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=#4d004d ctermbg=4
+
+let g:indent_guides_start_level=2
+let g:indent_guides_guide_size=1
+
+let g:terraform_align=1
+let g:terraform_fmt_on_save=1
+
 "set all .es6 files to be javascript files
 au BufNewFile,BufRead *.es6 set filetype=javascript
 
@@ -194,6 +217,12 @@ if executable('ag')
   " Use ag in CtrlP for listing files. Lightning fast and respects .gitignore
   let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
 endif
+
+autocmd BufEnter *.js if (executable('./node_modules/.bin/flow')) | let g:flow#flowpath = "./node_modules/.bin/flow" | else | let g:flow#flowpath = "flow" | endif
+  
+
+"allow use to use bash
+set shell=/bin/bash
 
 autocmd QuickFixCmdPost *grep* cwindow
 

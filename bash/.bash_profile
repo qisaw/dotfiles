@@ -23,6 +23,8 @@ alias gr="git reset"
 alias gp="git push --follow-tags"
 alias gt="git tag"
 alias gpl="git pull"
+alias bastionprod="ssh -A ubuntu@35.164.1.250"
+alias bastioncat="ssh -A ubuntu@52.11.215.109"
 
 function parse_git_branch {
   git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ \1/' -e "s/ //"
@@ -59,7 +61,10 @@ alias kcdp='kubectl describe po'
 
 alias ave='aws-vault exec'
 alias avec='aws-vault exec capps-cat-admin --'
-alias aved='aws-vault exec capps-prod-admin --'
+alias avep='aws-vault exec capps-prod-admin --'
+alias dc='docker-compose'
+alias d='docker'
+alias de='docker exec -it'
 
 #LOAD NVM
 export NVM_DIR="/Users/wasiqkashkari/.nvm"
