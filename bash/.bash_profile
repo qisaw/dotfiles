@@ -1,6 +1,8 @@
 export JAVA_HOME=$(/usr/libexec/java_home)
 export ANDROID_HOME="${HOME}/Library/Android/sdk"
+export PATH="${PATH}:$JAVA_HOME/bin"
 export PATH="$HOME/.fastlane/bin:$PATH"
+export PATH=${PATH}:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools
 export ENVIRONMENT=dev
 export REACT_EDITOR=mvim
 export EDITOR=mvim
@@ -23,6 +25,7 @@ alias gr="git reset"
 alias gp="git push --follow-tags"
 alias gt="git tag"
 alias gpl="git pull"
+alias adbtcp="adb reverse tcp:9090 tcp:9090"
 alias bastionprod="ssh -A ubuntu@35.164.1.250"
 alias bastioncat="ssh -A ubuntu@52.11.215.109"
 
@@ -62,6 +65,8 @@ alias kcdp='kubectl describe po'
 alias ave='aws-vault exec'
 alias avec='aws-vault exec capps-cat-admin --'
 alias avep='aws-vault exec capps-prod-admin --'
+alias tp='terrform plan -out=plan.out'
+alias ta='terrform apply plan.out'
 alias dc='docker-compose'
 alias d='docker'
 alias de='docker exec -it'

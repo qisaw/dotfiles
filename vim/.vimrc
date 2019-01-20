@@ -6,7 +6,6 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 " alternatively, pass a path where Vundle should install plugins
 "call vundle#begin('~/some/path/here')
-
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'tpope/vim-fugitive'
@@ -14,7 +13,6 @@ Plugin 'pangloss/vim-javascript'
 Plugin 'mxw/vim-jsx'
 Plugin 'mhinz/vim-janah'
 Plugin 'Valloric/YouCompleteMe'
-Plugin 'scrooloose/syntastic'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'moll/vim-node'
 Plugin 'altercation/vim-colors-solarized'
@@ -43,11 +41,23 @@ Plugin 'hashivim/vim-terraform'
 Plugin 'posva/vim-vue'
 Plugin 'othree/javascript-libraries-syntax.vim'
 Plugin 'prettier/vim-prettier', { 'oninstall': 'yarn install' }
+Plugin 'w0rp/ale'
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
+Plugin 'jaawerth/nrun.vim'
+"ENSURE YOU RUN 
+"brew install --HEAD universal-ctags/universal-ctags/universal-ctags
+"on mac
+Plugin 'ludovicchabant/vim-gutentags'
+Plugin 'kristijanhusak/vim-js-file-import', {'oninstall': 'npm install'}
+
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
 set smartindent
+set backupcopy=yes
+
 " To ignore plugin indent changes, instead use:
 "filetype plugin on
 "
@@ -59,6 +69,8 @@ set smartindent
 "
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this linen 'tpope/vim-fugitive'
+
+
 
 let mapleader = ","
 nnoremap l o
@@ -121,7 +133,6 @@ set tabstop=2
 set shiftwidth=2
 set expandtab
 set nowrap
-set rtp+=~/Library/Python/2.7/lib/python/site-packages/powerline/bindings/vim/
 "if we use a capital it will look for case sensitive
 set ignorecase
 set smartcase
@@ -131,6 +142,7 @@ map <C-n> :NERDTreeToggle<CR>
 autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 let NERDTreeMapOpenExpl="j"
+let NERDTreeShowHidden=1
 
 " NERDCommentor
 map <C-c> <leader>c
@@ -144,27 +156,55 @@ if (has('gui_running'))
   set background=dark
   colorscheme solarized
 else
-  colorscheme darkblue
+  colorscheme delek
 endif
 
 set nu
 set showmatch
-set guifont=Anonymice\ Powerline:h16
+"download from here
+"https://github.com/powerline/fonts
+set guifont=Meslo\ LG\ L\ Regular\ for\ Powerline:h14
+set linespace=0
 "yank to clipboard
 set clipboard+=unnamed
-let g:syntastic_javascript_checkers = ['eslint']
-let g:syntastic_javascript_eslint_exe = 'node_modules/.bin/eslint --no-ignore'
 
 set suffixesadd+=.vue
 
-set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
+"ale and airline
+let g:ale_completion_enabled = 1
+let g:airline#extensions#ale#enabled = 1
+let g:ale_set_balloons = 1
+"don't show typescript erros when using flow 
+let g:ale_pattern_options = {
+\ '\.min\.js$': {'ale_linters': [], 'ale_fixers': []},
+\ '\.min\.css$': {'ale_linters': [], 'ale_fixers': []},
+\ '\.jsbundle$': {'ale_linters': [], 'ale_fixers': []},
+\ 'capps-platform\/backend\/.*\.js$': {'ale_linters': ['eslint', 'tsserver', 'prettier'], 'ale_fixers': ['eslint', 'prettier']},
+\ 'capps-platform\/frontend\/.*\.js$': {'ale_linters': ['eslint', 'flow-language-server', 'prettier'], 'ale_fixers': ['eslint', 'prettier']},
+\ 'capps-platform\/lambdas\/.*\.js$': {'ale_linters': ['eslint', 'flow-language-server', 'prettier'], 'ale_fixers': ['eslint', 'prettier']},
+\ 'capps-react-app\/.*\.js$': {'ale_linters': ['eslint', 'flow', 'prettier'], 'ale_fixers': ['prettier']},
+\ '\.ts$': {'ale_linters': ['tslint', 'tsserver', 'typecheck']},
+\ '\.tsx$': {'ale_linters': ['tslint', 'tsserver', 'typecheck']},
+\}
+let g:ale_pattern_options_enabled = 1
+let g:ale_fix_on_save = 0
+nnoremap <leader>h :ALEHover<CR>
+nnoremap <leader>gd :ALEGoToDefinition<CR>
+nnoremap <leader>ref :ALEFindReferences<CR>
+nnoremap <leader>ss :ALESymbolSearch<CR>
+" ensure that ale is not too eager
+set completeopt+=noinsert
+" use tab and shift-tab to navigate autocomplete menu
+inoremap <expr> <Tab> ((pumvisible())?("\<C-n>"):("\<Tab>"))
+inoremap <expr> <S-Tab> ((pumvisible())?("\<C-p>"):("\<S-Tab>"))
 
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_loc_list = 1
-let g:syntastic_check_on_open = 1
-let g:syntastic_check_on_wq = 0
+let g:airline#extensions#tabline#enabled = 1
+let g:airline_theme='base16'
+let g:airline_powerline_fonts = 1
+
+" vim-js-file-import
+let g:js_file_import_sort_after_insert = 1
+
 syntax on
 filetype on
 
@@ -182,11 +222,6 @@ let g:syntastic_typescript_checkers = ['tsuquyomi']
 let g:javascript_plugin_flow = 1
 let g:flow#autoclose = 1
 
-let g:javascript_conceal_function = "ƒ"
-let g:javascript_conceal_arrow_function = "λ"
-
-"set conceallevel=1
-
 "vim rooter
 let g:rooter_patterns = ['package.json', '.git/']
 let g:rooter_resolve_links = 1
@@ -195,34 +230,40 @@ let g:jsx_ext_required = 0
 
 let g:indent_guides_enable_on_vim_startup = 1
 
-"let g:indent_guides_auto_colors = 0
-"autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  guibg=#ffccff   ctermbg=3
-"autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=#4d004d ctermbg=4
-
 let g:indent_guides_start_level=2
 let g:indent_guides_guide_size=1
+"ensure indents don't interfere with goto definition
+nmap <silent> <Leader>indent <Plug>IndentGuidesToggle
 
 let g:terraform_align=1
 let g:terraform_fmt_on_save=1
 
 "set all .es6 files to be javascript files
 au BufNewFile,BufRead *.es6 set filetype=javascript
+au BufNewFile,BufRead *.flow set filetype=javascript
 
 if executable('ag')
-  let g:ackprg = 'ag --nogroup --column'
+  let g:ackprg = 'ag --nogroup --column --ignore=*.jsbundle --ignore-dir=node_modules'
 
   " Use Ag over Grep
-  set grepprg=ag\ --nogroup\ --nocolor
+  set grepprg=ag\ --nogroup\ --nocolor\ --ignore=*.jsbundle\ --ignore-dir=node_modules
+      
 
   " Use ag in CtrlP for listing files. Lightning fast and respects .gitignore
-  let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
+  let g:ctrlp_user_command = 'ag --ignore=*.jsbundle --ignore-dir=node_modules %s -l --nocolor -g ""'
 endif
 
-autocmd BufEnter *.js if (executable('./node_modules/.bin/flow')) | let g:flow#flowpath = "./node_modules/.bin/flow" | else | let g:flow#flowpath = "flow" | endif
-  
+" bind <leader>g to grep word under cursor
+nnoremap <leader>g :grep! "\b<C-R><C-W>\b"<CR>:cw<CR>
+nnoremap <leader>r :%s/\<<C-R><C-W>\>/
+map <Leader>w <Plug>(easymotion-bd-w)
+
+autocmd BufEnter *.js let g:flow#flowpath = nrun#Which('flow')
+autocmd BufEnter *.jsx let g:flow#flowpath = nrun#Which('flow')
+autocmd BufEnter *.es6 let g:flow#flowpath = nrun#Which('flow')
+autocmd BufEnter *.flow let g:flow#flowpath = nrun#Which('flow')
 
 "allow use to use bash
 set shell=/bin/bash
 
 autocmd QuickFixCmdPost *grep* cwindow
-
