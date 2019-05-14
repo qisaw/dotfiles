@@ -10,3 +10,4 @@ source ~/config/.vim/plugins/vim-rooter.vimrc
 source ~/config/.vim/plugins/vim-flow.vimrc
 source ~/config/.vim/plugins/vim-javascript.vimrc
 source ~/config/.vim/plugins/vim-terraform.vimrc
+source ~/config/.vim/plugins/fzf.vim.vimrc

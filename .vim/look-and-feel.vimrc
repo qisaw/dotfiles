@@ -1,9 +1,13 @@
 " gui settings
+" use solarized in macvim
 if (has('gui_running'))
   set background=dark
   colorscheme solarized
 else
-  colorscheme delek
+  " use deep-space in nvim
+  set termguicolors
+  set background=dark
+  colorscheme deep-space
 endif
 
 "download from here
