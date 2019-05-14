@@ -37,7 +37,6 @@ Plugin 'hashivim/vim-terraform'
 Plugin 'posva/vim-vue'
 Plugin 'othree/javascript-libraries-syntax.vim'
 Plugin 'prettier/vim-prettier', { 'oninstall': 'yarn install' }
-Plugin 'w0rp/ale'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'jaawerth/nrun.vim'
