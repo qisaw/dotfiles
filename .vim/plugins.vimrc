@@ -44,12 +44,12 @@ Plugin 'jaawerth/nrun.vim'
 Plugin 'tyrannicaltoucan/vim-deep-space'
 Plugin 'junegunn/fzf', { 'dir': '~/.fzf', 'oninstall': './install --all' }
 Plugin 'junegunn/fzf.vim'
+Plugin 'neoclide/coc.nvim', {'oninstall': './install.sh nightly'}
 "ENSURE YOU RUN 
 "brew install --HEAD universal-ctags/universal-ctags/universal-ctags
 "on mac
 Plugin 'ludovicchabant/vim-gutentags'
 Plugin 'kristijanhusak/vim-js-file-import', {'oninstall': 'npm install'}
-
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
