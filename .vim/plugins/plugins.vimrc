@@ -11,3 +11,4 @@ source ~/config/.vim/plugins/vim-flow.vimrc
 source ~/config/.vim/plugins/vim-javascript.vimrc
 source ~/config/.vim/plugins/vim-terraform.vimrc
 source ~/config/.vim/plugins/fzf.vim.vimrc
+source ~/config/.vim/plugins/vim-fugitive.vimrc

@@ -2,7 +2,7 @@ map <C-A> :Files<CR>
 map <C-P> :GFiles<CR>
 map <C-F> :Ag<CR>
 map <C-B> :Buffer<CR>
-map <leader><leader>gs :Commits<CR>
+map <leader><leader>gc :Commits<CR>
 
 let g:fzf_buffers_jump = 1
 
