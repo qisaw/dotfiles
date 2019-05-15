@@ -2,16 +2,17 @@
   // this is a jsonc file that supports comments
   // symlink this to ~/.config/nvim/coc-settings.json
   // ln -s ~/config/.vim/plugins/coc-settings.json ~/.config/nvim/coc-settings.json
-  // "languageserver": {
-  //   "flow": {
-  //     "command": "flow",
-  //     "args": ["lsp"],
-  //     "filetypes": ["javascript", "javascriptreact"],
-  //     "initializationOptions": {},
-  //     "requireRootPattern": true,
-  //     "settings": {},
-  //     "rootPatterns": [".flowconfig"]
-  //   }
-  // }
+  "languageserver": {
+    "flow": {
+      "command": "./node_modules/.bin/flow",
+      "args": ["lsp"],
+      "filetypes": ["javascript", "javascriptreact"],
+      "initializationOptions": {},
+      "requireRootPattern": true,
+      "settings": {},
+      "rootPatterns": [".flowconfig"]
+    }
+  },
   "coc.preferences.colorSupport": true,
+  "suggest.enablePreview": true
 }
