@@ -5,10 +5,10 @@ nnoremap <leader>o <C-W><C-L>
 nnoremap <leader>y <C-W><C-H>
 
 "rotating windows
-"nnoremap <leader><leader>r <C-W><C-R>
-"nnoremap <leader><leader>R <C-W>R
+nnoremap <leader><leader>r <C-W><C-R>
+nnoremap <leader><leader>R <C-W>R
 
 "creating new windows
-"nnoremap <leader><leader>s <C-W><C-S>
-"nnoremap <leader><leader>v <C-W><C-V>
-"nnoremap <leader><leader>y <C-W><C-N>
+nnoremap <leader><leader>s <C-W><C-S>
+nnoremap <leader><leader>v <C-W><C-V>
+nnoremap <leader><leader>y <C-W><C-N>
