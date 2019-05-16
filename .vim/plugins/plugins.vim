@@ -7,7 +7,6 @@ source ~/config/.vim/plugins/coc-nvim.vim
 source ~/config/.vim/plugins/vim-js-file-import.vim
 source ~/config/.vim/plugins/vim-jsx.vim
 source ~/config/.vim/plugins/vim-rooter.vim
-source ~/config/.vim/plugins/vim-flow.vim
 source ~/config/.vim/plugins/vim-javascript.vim
 source ~/config/.vim/plugins/vim-terraform.vim
 source ~/config/.vim/plugins/fzf.vim.vim
