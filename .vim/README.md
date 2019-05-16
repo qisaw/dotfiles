@@ -3,10 +3,10 @@
 ## Introduction
 This is my current vim config. I currently use [neovim](https://neovim.io/), but this should work for any vim distro where vim 8+.
 
-**Warning: I have not tested this config in any other vim distro. I did use [MacVim](https://github.com/macvim-dev/macvim), a while ago, but have since re-written this config.
+**Warning: I have not tested this config in any other vim distro. I did use [MacVim](https://github.com/macvim-dev/macvim), a while ago, but have since re-written this config.**
 
 **I use a custom keyboard, [Wasiqman](https://github.com/qisaw/wasiqman) so have a whole bunch of key remappings to ensure that I use the home row as much as possible.
-  These mappings are all defined in `config/.vim/keys.vim` but also propoagte through the rest of the `.vim` files e.g. `config/.vim/window.vim`. You'll probably want to look through these vim files and re-write what you don't like before using it blindly.
+  These mappings are all defined in `config/.vim/keys.vim` but also propoagte through the rest of the `.vim` files e.g. `config/.vim/window.vim`. You'll probably want to look through these vim files and re-write what you don't like before using it blindly.**
 
 ## Installation
 1. You need to clone this repository into `$HOME/config`
