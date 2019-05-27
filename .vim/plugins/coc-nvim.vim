@@ -1,6 +1,6 @@
-" this seems to do nothing, TODO fix this
-autocmd CursorHold * silent call CocActionAsync('highlight')
-set updatetime=300
+" this sucks, don't use this
+" autocmd CursorHold * silent call <SID>show_documentation()
+" set updatetime=300
 
 " use tab and shift-tab to navigate autocomplete menu
 " use tab to start an autocomplete

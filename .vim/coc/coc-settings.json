@@ -14,5 +14,6 @@
     }
   },
   "coc.preferences.colorSupport": true,
-  "suggest.enablePreview": true
+  "suggest.enablePreview": true,
+  "diagnostic.checkCurrentLine": true
 }
