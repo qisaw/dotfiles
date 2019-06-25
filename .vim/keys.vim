@@ -46,3 +46,7 @@ inoremap <leader><leader><space> <C-x><C-o>
 
 " space space to go to the previous buffer
 nmap <leader><space> :b#<CR>
+
+
+" map escape to exit in terminal mode
+tnoremap <leader><leader>q <C-\><C-n>

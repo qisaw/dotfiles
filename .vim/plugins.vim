@@ -38,6 +38,7 @@ Plugin 'tyrannicaltoucan/vim-deep-space'
 Plugin 'junegunn/fzf', { 'dir': '~/.fzf', 'oninstall': './install --all' }
 Plugin 'junegunn/fzf.vim'
 Plugin 'neoclide/coc.nvim', {'oninstall': './install.sh nightly'}
+Plugin 'HerringtonDarkholme/yats.vim'
 "ENSURE YOU RUN 
 "brew install --HEAD universal-ctags/universal-ctags/universal-ctags
 "on mac

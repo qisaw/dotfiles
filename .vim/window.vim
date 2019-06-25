@@ -12,3 +12,4 @@ nnoremap <leader><leader>R <C-W>R
 nnoremap <leader><leader>s <C-W><C-S>
 nnoremap <leader><leader>v <C-W><C-V>
 nnoremap <leader><leader>y <C-W><C-N>
+nnoremap <C-W><C-W> <nop>
