@@ -5,3 +5,5 @@ autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 let NERDTreeMapOpenExpl="j"
 let NERDTreeShowHidden=1
 
+nnoremap <C-S> :NERDTreeFind<CR>
+
