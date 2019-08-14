@@ -75,3 +75,9 @@ alias de='docker exec -it'
 export NVM_DIR="/Users/wasiqkashkari/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/wasiqkashkari/google-cloud-sdk/path.bash.inc' ]; then . '/Users/wasiqkashkari/google-cloud-sdk/path.bash.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/wasiqkashkari/google-cloud-sdk/completion.bash.inc' ]; then . '/Users/wasiqkashkari/google-cloud-sdk/completion.bash.inc'; fi
