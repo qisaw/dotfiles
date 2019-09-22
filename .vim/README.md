@@ -26,7 +26,7 @@ touch $HOME/.config/nvim/init.vim
 ln -s ~/config/.vim/coc/coc-settings.json ~/.config/nvim/coc-settings.json
 ~~~
 6. Close nvim and install all the [coc.nvim](https://github.com/neoclide/coc.nvim) extensions by running `~/config/.vim/coc/setup.sh`
-7. Download and install the correct font from [here](https://github.com/powerline/fonts). Font name: Meslo LG L Regular for Powerline
+7. Download and install the correct font from [here](https://github.com/powerline/fonts). Link to exact font [here](https://github.com/powerline/fonts/blob/master/Meslo%20Slashed/Meslo%20LG%20L%20Regular%20for%20Powerline.ttf)
 
 You are done!!! Enjoy my nvim config
 
