@@ -4,12 +4,12 @@ export PATH="${PATH}:$JAVA_HOME/bin"
 export PATH="$HOME/.fastlane/bin:$PATH"
 export PATH=${PATH}:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools
 export ENVIRONMENT=dev
-export REACT_EDITOR=mvim
-export EDITOR=mvim
+export REACT_EDITOR=nvim
+export EDITOR=nvim
 
 # GIT COMMANDS/ALIASES
 # Set the default git editor to vim instead of vi
-export GIT_EDITOR=vim
+export GIT_EDITOR=nvim
 
 alias g="git"
 alias gc="git commit"
@@ -73,7 +73,8 @@ alias de='docker exec -it'
 
 #LOAD NVM
 export NVM_DIR="/Users/wasiqkashkari/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
 
 
 # The next line updates PATH for the Google Cloud SDK.
