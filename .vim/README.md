@@ -1,8 +1,8 @@
 # Vim
 
-## Prerequsites\
-* (ctags)[https://github.com/universal-ctags/homebrew-universal-ctags]
-* (nodeJS)[https://github.com/nvm-sh/nvm]
+## Prerequsites
+* [ctags](https://github.com/universal-ctags/homebrew-universal-ctags)
+* [nodeJS](https://github.com/nvm-sh/nvm)
 
 
 ## Introduction
