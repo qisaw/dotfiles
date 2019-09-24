@@ -88,3 +88,4 @@ if [ -f '/Users/wasiqkashkari/google-cloud-sdk/completion.bash.inc' ]; then . '/
 # git
 git config --global user.name "Wasiq Kashkari"
 git config --global user.email "w.kashkari@outlook.com"
+git config --global core.excludesfile ~/config/bash/.gitignore
