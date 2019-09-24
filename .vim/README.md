@@ -1,5 +1,10 @@
 # Vim
 
+## Prerequsites\
+* (ctags)[https://github.com/universal-ctags/homebrew-universal-ctags]
+* (nodeJS)[https://github.com/nvm-sh/nvm]
+
+
 ## Introduction
 This is my current vim config. I currently use [neovim](https://neovim.io/), but this should work for any vim distro where vim 8+.
 
