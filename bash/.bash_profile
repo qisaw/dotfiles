@@ -84,3 +84,7 @@ if [ -f '/Users/wasiqkashkari/google-cloud-sdk/path.bash.inc' ]; then . '/Users/
 if [ -f '/Users/wasiqkashkari/google-cloud-sdk/completion.bash.inc' ]; then . '/Users/wasiqkashkari/google-cloud-sdk/completion.bash.inc'; fi
 
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
+
+# git
+git config --global user.name "Wasiq Kashkari"
+git config --global user.email "w.kashkari@outlook.com"
