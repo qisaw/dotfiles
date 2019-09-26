@@ -93,3 +93,27 @@ git config --global core.excludesfile ~/config/bash/.gitignore
 # key repeat rate
 defaults write -g InitialKeyRepeat -int 10 # normal minimum is 15 (225 ms)
 defaults write -g KeyRepeat -int 1 # normal minimum is 2 (30 ms)
+
+# kubectl
+alias k-stage='export KNS=staging'
+alias k-prod='export KNS=production'
+alias k-dev='export KNS=dev'
+alias k-flux='export KNS=flux'
+alias kn='kubectl -n $KNS'
+alias kns='kn get namespaces'
+alias kps='kubectl -n $KNS get pods'
+alias kp='kubectl -n $KNS get pod $1'
+alias kpd='kubectl -n $KNS describe pod $1'
+#ksh_func() { kn exec -it $1 -- sh }
+#alias ksh=ksh_func
+#kport_func() { kn port-forward $1 $2:$3 } # pod localPort remotePort
+#alias kport=kport_func
+
+# helm 
+#helm_func() { helm $1 --tls $2 $3 $4 $5 }
+#alias h=helm_func
+alias hh='helm history --tls'
+alias hhj='helm history --tls -o yaml'
+alias h-sealed='helm sealed-secrets enc-dir secret-templates kubernetes-resources'
+
+export HELM_HOME=~/.helm
