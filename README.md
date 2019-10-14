@@ -4,9 +4,9 @@ This repository contains all my dot files for setting up my environment
 
 | Technology | Setup instructions |
 | ---------- | -------------------|
-| [Vim](https://www.vim.org/) | To set up vim, see the instructions [here](./.vim/README.md) |
-| [Bash](https://www.gnu.org/software/bash/) | To set up my bash config, see instructions [here](./bash/README.md) |
 | [Homebrew](https://brew.sh/) | To set up my homebrew packages, see instructions [here](#Homebrew) |
+| [Bash](https://www.gnu.org/software/bash/) | To set up my bash config, see instructions [here](./bash/README.md) |
+| [Vim](https://www.vim.org/) | To set up vim, see the instructions [here](./.vim/README.md) |
 
 
 # Homebrew
