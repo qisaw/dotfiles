@@ -40,22 +40,11 @@ function gcm {
 # Show git branch on command line
 export PS1="\u@\h \W\[\033[32m\] (\$(parse_git_branch))\[\033[00m\] $ "
 
-# NPM ALIASES
-alias nrs="npm run start"
-alias nrt="npm run test"
-alias nrc="npm run compile"
-alias capps="cd ~/dev/capps"
-alias platform="cd ~/dev/capps/capps-platform"
-alias platform.f="cd ~/dev/capps/capps-platform/frontend"
-alias platform.b="cd ~/dev/capps/capps-platform/backend"
-
 #TMUX ALIASES
 alias tm.ks='tmux kill-session'
 alias tm="tmux"
 
-alias ave='aws-vault exec'
-alias avec='aws-vault exec capps-cat-admin --'
-alias avep='aws-vault exec capps-prod-admin --'
+#TERRAFORM
 alias tp='terraform plan -out=plan.out'
 alias ta='terraform apply plan.out'
 alias dc='docker-compose'
