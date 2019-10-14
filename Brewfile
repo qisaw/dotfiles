@@ -27,6 +27,7 @@ brew redis
 brew the_silver_searcher
 brew tig
 brew unibilium
+brew vault
 brew watch
 brew wget
 brew xz
@@ -34,10 +35,10 @@ brew xz
 tap homebrew/cask
 cask alfred
 cask flycut
-cask iterm2
-cask lastpass
-cask slack
-cask whatsapp
+cask google-cloud-sdk
+cask java
+cask minikube
+cask spotify
 
 tap rcmdnk/file
 brew brew-file
@@ -48,9 +49,10 @@ brew universal-ctags --HEAD
 # Other Cask applications
 cask docker
 cask google-chrome
-cask java
-cask minikube
-cask spotify
+cask iterm2
+cask lastpass
+cask slack
+cask whatsapp
 
 # App Store applications
 appstore 682658836 GarageBand (10.3.2)
