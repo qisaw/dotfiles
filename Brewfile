@@ -39,6 +39,9 @@ brew brew-file
 tap universal-ctags/universal-ctags
 brew universal-ctags --HEAD
 
+# Other Cask applications
+cask spotify
+
 # App Store applications
 appstore 442160987 Flycut (1.5)
 appstore 682658836 GarageBand (10.3.2)
