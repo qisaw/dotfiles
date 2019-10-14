@@ -27,7 +27,7 @@ This is my current vim config. I currently use [neovim](https://neovim.io/), but
     mkdir -p $HOME/.config/nvim
     touch $HOME/.config/nvim/init.vim
     ~~~
-1. You'll need to add a source line in the `init.vim` file to source the `init.vim` file in this repository. You can do this by adding `source ~/config/.vim/init.vim` to the `~/.config/nvim/init.vim` file
+1. You'll need to add a source line in the `init.vim` file to source the `init.vim` file in this repository. You can do this by adding `source ~/dotfiles/.vim/init.vim` to the `~/.config/nvim/init.vim` file
 1. Install [vim-plug](https://github.com/junegunn/vim-plug)
     ~~~
     curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \
