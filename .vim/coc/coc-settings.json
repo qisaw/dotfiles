@@ -1,7 +1,7 @@
 {
   // this is a jsonc file that supports comments
   // symlink this to ~/.config/nvim/coc-settings.json
-  // ln -s ~/config/.vim/plugins/coc-settings.json ~/.config/nvim/coc-settings.json
+  // ln -s ~/dotfiles/.vim/plugins/coc-settings.json ~/.config/nvim/coc-settings.json
   "languageserver": {
     "flow": {
       "command": "./node_modules/.bin/flow",

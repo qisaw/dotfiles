@@ -53,15 +53,6 @@ alias platform.b="cd ~/dev/capps/capps-platform/backend"
 alias tm.ks='tmux kill-session'
 alias tm="tmux"
 
-#KUBERNETES ALIASES
-alias kc=kubectl
-alias kca='kubectl apply -f'
-alias kcr='kubectl replace -f'
-alias kcg='kubectl get configmap'
-alias kcc='kubectl create -f'
-alias kcgp='kubectl get po'
-alias kcdp='kubectl describe po'
-
 alias ave='aws-vault exec'
 alias avec='aws-vault exec capps-cat-admin --'
 alias avep='aws-vault exec capps-prod-admin --'
@@ -88,22 +79,15 @@ if [ -f '/Users/wasiqkashkari/google-cloud-sdk/completion.bash.inc' ]; then . '/
 # git
 git config --global user.name "Wasiq Kashkari"
 git config --global user.email "w.kashkari@outlook.com"
-git config --global core.excludesfile ~/config/bash/.gitignore
+git config --global core.excludesfile ~/dotfiles/bash/.gitignore
 
 # key repeat rate
 defaults write -g InitialKeyRepeat -int 10 # normal minimum is 15 (225 ms)
 defaults write -g KeyRepeat -int 1 # normal minimum is 2 (30 ms)
 
 # kubectl
-alias k-stage='export KNS=staging'
-alias k-prod='export KNS=production'
-alias k-dev='export KNS=dev'
-alias k-flux='export KNS=flux'
-alias kn='kubectl -n $KNS'
-alias kns='kn get namespaces'
-alias kps='kubectl -n $KNS get pods'
-alias kp='kubectl -n $KNS get pod $1'
-alias kpd='kubectl -n $KNS describe pod $1'
+alias ks='kubectl -n staging'
+alias kp='kubectl -n production'
 #ksh_func() { kn exec -it $1 -- sh }
 #alias ksh=ksh_func
 #kport_func() { kn port-forward $1 $2:$3 } # pod localPort remotePort

@@ -41,6 +41,7 @@ Plugin 'neoclide/coc.nvim', {'oninstall': './install.sh nightly'}
 Plugin 'HerringtonDarkholme/yats.vim'
 Plugin 'martinda/Jenkinsfile-vim-syntax'
 Plugin 'kristijanhusak/vim-js-file-import', {'oninstall': 'npm install'}
+Plugin 'iamcco/markdown-preview.nvim', { 'oninstall': 'cd app && yarn install' }
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
