@@ -3,7 +3,7 @@
 ## Prerequsites
 * [ctags](https://github.com/universal-ctags/homebrew-universal-ctags)
 * [nodeJS](https://github.com/nvm-sh/nvm)
-* Yarn `npm install -g yarn`
+* [yarn](https://yarnpkg.com/lang/en/)
 
 
 ## Introduction
