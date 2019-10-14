@@ -38,7 +38,7 @@ This is my current vim config. I currently use [neovim](https://neovim.io/), but
     ~~~
     ln -s ~/dotfiles/.vim/coc/coc-settings.json ~/.config/nvim/coc-settings.json
     ~~~
-1. Close nvim and install all the [coc.nvim](https://github.com/neoclide/coc.nvim) extensions by running `~/config/.vim/coc/setup.sh`
+1. Close nvim and install all the [coc.nvim](https://github.com/neoclide/coc.nvim) extensions by running `~/dotfiles/.vim/coc/setup.sh`
 1. Download and install the correct font from [here](https://github.com/powerline/fonts). Link to exact font [here](https://github.com/powerline/fonts/blob/master/Meslo%20Slashed/Meslo%20LG%20L%20Regular%20for%20Powerline.ttf)
 1. If you are not using a gui vim instance (GVIM or MacVim) set your terminal font to the font you downloaded
 
