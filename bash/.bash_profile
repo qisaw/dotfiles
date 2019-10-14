@@ -101,3 +101,8 @@ alias hhj='helm history --tls -o yaml'
 alias h-sealed='helm sealed-secrets enc-dir secret-templates kubernetes-resources'
 
 export HELM_HOME=~/.helm
+
+# brew-file
+if [ -f $(brew --prefix)/etc/brew-wrap ];then
+  source $(brew --prefix)/etc/brew-wrap
+fi
