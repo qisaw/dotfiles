@@ -106,3 +106,10 @@ export HELM_HOME=~/.helm
 if [ -f $(brew --prefix)/etc/brew-wrap ];then
   source $(brew --prefix)/etc/brew-wrap
 fi
+
+# gcloud
+source '$(brew --prefix)/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.bash.inc'
+source '$(brew --prefix)/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.bash.inc'
+
+# vault
+export VAULT_ADDR=https://vault.actano.de
