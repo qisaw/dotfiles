@@ -4,6 +4,8 @@
 * [ctags](https://github.com/universal-ctags/homebrew-universal-ctags)
 * [nodeJS](https://github.com/nvm-sh/nvm)
 * [yarn](https://yarnpkg.com/lang/en/)
+* [neovim](https://neovim.io/)
+* [vim-plug](https://github.com/junegunn/vim-plug)
 
 
 ## Introduction
@@ -16,23 +18,29 @@ This is my current vim config. I currently use [neovim](https://neovim.io/), but
 
 ## Installation
 1. You need to clone this repository into `$HOME/dotfiles`
-~~~
-cd $HOME
-git clone git@github.com:qisaw/dotfiles.git
-~~~
-2. NeoVim expects it's `init.vim` file to be in `$HOME/.config/nivm/init.vim` so you'll need to create this file
-~~~
-mkdir -p $HOME/.config/nvim
-touch $HOME/.config/nvim/init.vim
-~~~
-3. You'll need to add a source line in the `init.vim` file to source the `init.vim` file in this repository. You can do this by adding `source ~/config/.vim/init.vim` to the `~/.config/nvim/init.vim` file
-4. Open nvim and run `:PluginInstall` to install all plugins I use.
-5. Symlink the coc-settings file to where [coc.nvim](https://github.com/neoclide/coc.nvim) expects it to be
-~~~
-ln -s ~/dotfiles/.vim/coc/coc-settings.json ~/.config/nvim/coc-settings.json
-~~~
-6. Close nvim and install all the [coc.nvim](https://github.com/neoclide/coc.nvim) extensions by running `~/config/.vim/coc/setup.sh`
-7. Download and install the correct font from [here](https://github.com/powerline/fonts). Link to exact font [here](https://github.com/powerline/fonts/blob/master/Meslo%20Slashed/Meslo%20LG%20L%20Regular%20for%20Powerline.ttf)
-8. If you are not using a gui vim instance (GVIM or MacVim) set your terminal font to the font you downloaded
+    ~~~
+    cd $HOME
+    git clone git@github.com:qisaw/dotfiles.git
+    ~~~
+1. NeoVim expects it's `init.vim` file to be in `$HOME/.config/nivm/init.vim` so you'll need to create this file
+    ~~~
+    mkdir -p $HOME/.config/nvim
+    touch $HOME/.config/nvim/init.vim
+    ~~~
+1. You'll need to add a source line in the `init.vim` file to source the `init.vim` file in this repository. You can do this by adding `source ~/config/.vim/init.vim` to the `~/.config/nvim/init.vim` file
+1. Install [vim-plug](https://github.com/junegunn/vim-plug)
+    ~~~
+    curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \
+        https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+    ~~~
+1. Open nvim and run `:PlugInstall` to install all plugins I use.
+1. Symlink the coc-settings file to where [coc.nvim](https://github.com/neoclide/coc.nvim) expects it to be
+    ~~~
+    ln -s ~/dotfiles/.vim/coc/coc-settings.json ~/.config/nvim/coc-settings.json
+    ~~~
+1. Close nvim and install all the [coc.nvim](https://github.com/neoclide/coc.nvim) extensions by running `~/config/.vim/coc/setup.sh`
+1. Download and install the correct font from [here](https://github.com/powerline/fonts). Link to exact font [here](https://github.com/powerline/fonts/blob/master/Meslo%20Slashed/Meslo%20LG%20L%20Regular%20for%20Powerline.ttf)
+1. If you are not using a gui vim instance (GVIM or MacVim) set your terminal font to the font you downloaded
+
 You are done!!! Enjoy my nvim config
 
