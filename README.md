@@ -1,4 +1,4 @@
-# My Config
+# My Dotfiles
 
 This containens all my dot files for
 * vim
