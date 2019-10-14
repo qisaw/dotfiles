@@ -17,6 +17,7 @@ brew luajit
 brew mas
 brew msgpack
 brew neovim
+brew nvm
 brew openssl@1.1
 brew pcre
 brew pkg-config
@@ -33,9 +34,10 @@ brew xz
 tap homebrew/cask
 cask alfred
 cask flycut
-cask java
-cask minikube
-cask spotify
+cask iterm2
+cask lastpass
+cask slack
+cask whatsapp
 
 tap rcmdnk/file
 brew brew-file
@@ -46,9 +48,9 @@ brew universal-ctags --HEAD
 # Other Cask applications
 cask docker
 cask google-chrome
-cask lastpass
-cask slack
-cask whatsapp
+cask java
+cask minikube
+cask spotify
 
 # App Store applications
 appstore 682658836 GarageBand (10.3.2)
