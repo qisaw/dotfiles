@@ -1,61 +1,41 @@
 set nocompatible              " be iMproved, required
 filetype off                  " required
 
-" set the runtime path to include Vundle and initialize
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
-" alternatively, pass a path where Vundle should install plugins
-"call vundle#begin('~/some/path/here')
-" let Vundle manage Vundle, required
-Plugin 'VundleVim/Vundle.vim'
-Plugin 'tpope/vim-fugitive'
-Plugin 'pangloss/vim-javascript'
-Plugin 'mxw/vim-jsx'
-Plugin 'mhinz/vim-janah'
-Plugin 'airblade/vim-gitgutter'
-Plugin 'moll/vim-node'
-Plugin 'altercation/vim-colors-solarized'
-Plugin 'scrooloose/nerdtree'
-Plugin 'kchmck/vim-coffee-script'
-Plugin 'tpope/vim-surround'
-Plugin 'scrooloose/nerdcommenter'
-Plugin 'derekwyatt/vim-scala'
-Plugin 'jiangmiao/auto-pairs'
-Plugin 'danro/rename.vim'
-Plugin 'easymotion/vim-easymotion'
-Plugin 'mhartington/vim-typings'
-Plugin 'airblade/vim-rooter'
-Plugin 'ap/vim-css-color'
-Plugin 'nathanaelkane/vim-indent-guides'
-Plugin 'hashivim/vim-terraform'
-Plugin 'posva/vim-vue'
-Plugin 'othree/javascript-libraries-syntax.vim'
-Plugin 'prettier/vim-prettier', { 'oninstall': 'yarn install' }
-Plugin 'vim-airline/vim-airline'
-Plugin 'vim-airline/vim-airline-themes'
-Plugin 'jaawerth/nrun.vim'
-Plugin 'tyrannicaltoucan/vim-deep-space'
-Plugin 'junegunn/fzf', { 'dir': '~/.fzf', 'oninstall': './install --all' }
-Plugin 'junegunn/fzf.vim'
-Plugin 'neoclide/coc.nvim', {'oninstall': './install.sh nightly'}
-Plugin 'HerringtonDarkholme/yats.vim'
-Plugin 'martinda/Jenkinsfile-vim-syntax'
-Plugin 'kristijanhusak/vim-js-file-import', {'oninstall': 'npm install'}
-Plugin 'iamcco/markdown-preview.nvim', { 'oninstall': 'cd app && yarn install' }
-
-" All of your Plugins must be added before the following line
-call vundle#end()            " required
+call plug#begin('~/.vim/plugged')
+Plug 'VundleVim/Vundle.vim'
+Plug 'tpope/vim-fugitive'
+Plug 'pangloss/vim-javascript'
+Plug 'mxw/vim-jsx'
+Plug 'mhinz/vim-janah'
+Plug 'airblade/vim-gitgutter'
+Plug 'moll/vim-node'
+Plug 'altercation/vim-colors-solarized'
+Plug 'scrooloose/nerdtree'
+Plug 'kchmck/vim-coffee-script'
+Plug 'tpope/vim-surround'
+Plug 'scrooloose/nerdcommenter'
+Plug 'derekwyatt/vim-scala'
+Plug 'jiangmiao/auto-pairs'
+Plug 'danro/rename.vim'
+Plug 'easymotion/vim-easymotion'
+Plug 'mhartington/vim-typings'
+Plug 'airblade/vim-rooter'
+Plug 'ap/vim-css-color'
+Plug 'nathanaelkane/vim-indent-guides'
+Plug 'hashivim/vim-terraform'
+Plug 'posva/vim-vue'
+Plug 'othree/javascript-libraries-syntax.vim'
+Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+Plug 'jaawerth/nrun.vim'
+Plug 'tyrannicaltoucan/vim-deep-space'
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+Plug 'junegunn/fzf.vim'
+Plug 'neoclide/coc.nvim', {'do': './install.sh nightly'}
+Plug 'HerringtonDarkholme/yats.vim'
+Plug 'martinda/Jenkinsfile-vim-syntax'
+Plug 'kristijanhusak/vim-js-file-import', {'do': 'npm install'}
+Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install' }
+call plug#end()              " required
 filetype plugin indent on    " required
-
-" To ignore plugin indent changes, instead use:
-"filetype plugin on
-"
-" Brief help
-" :PluginList       - lists configured plugins
-" :PluginInstall    - installs plugins; append `!` to update or just :PluginUpdate
-" :PluginSearch foo - searches for foo; append `!` to refresh local cache
-" :PluginClean      - confirms removal of unused plugins; append `!` to auto-approve removal
-"
-" see :h vundle for more details or wiki for FAQ
-" Put your non-Plugin stuff after this linen 'tpope/vim-fugitive'
-
