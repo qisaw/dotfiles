@@ -52,10 +52,8 @@ alias d='docker'
 alias de='docker exec -it'
 
 #LOAD NVM
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-
+export NVM_DIR=~/.nvm
+source $(brew --prefix nvm)/nvm.sh
 
 # The next line updates PATH for the Google Cloud SDK.
 if [ -f '/Users/wasiqkashkari/google-cloud-sdk/path.bash.inc' ]; then . '/Users/wasiqkashkari/google-cloud-sdk/path.bash.inc'; fi
@@ -97,8 +95,8 @@ if [ -f $(brew --prefix)/etc/brew-wrap ];then
 fi
 
 # gcloud
-source '$(brew --prefix)/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.bash.inc'
-source '$(brew --prefix)/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.bash.inc'
+source "$(brew --prefix)/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.bash.inc"
+source "$(brew --prefix)/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.bash.inc"
 
 # vault
 export VAULT_ADDR=https://vault.actano.de
