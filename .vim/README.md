@@ -22,12 +22,14 @@ This is my current vim config. I currently use [neovim](https://neovim.io/), but
     cd $HOME
     git clone git@github.com:qisaw/dotfiles.git
     ~~~
-1. NeoVim expects it's `init.vim` file to be in `$HOME/.config/nivm/init.vim` so you'll need to create this file
+1. NeoVim expects it's `init.vim` file to be in `$HOME/.config/nivm/init.vim` so you'll need to create this folder
     ~~~
     mkdir -p $HOME/.config/nvim
-    touch $HOME/.config/nvim/init.vim
     ~~~
 1. You'll need to add a source line in the `init.vim` file to source the `init.vim` file in this repository. You can do this by adding `source ~/dotfiles/.vim/init.vim` to the `~/.config/nvim/init.vim` file
+    ~~~
+    echo "source ~/dotfiles/.vim/init.vim" > ~/.config/nvim/init.vim
+    ~~~
 1. Install [vim-plug](https://github.com/junegunn/vim-plug)
     ~~~
     curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \
