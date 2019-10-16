@@ -35,11 +35,11 @@ This is my current vim config. I currently use [neovim](https://neovim.io/), but
     curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \
         https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
     ~~~
-1. Open nvim and run `:PlugInstall` to install all plugins I use.
 1. Symlink the coc-settings file to where [coc.nvim](https://github.com/neoclide/coc.nvim) expects it to be
     ~~~
     ln -s ~/dotfiles/.vim/coc/coc-settings.json ~/.config/nvim/coc-settings.json
     ~~~
+1. Open nvim and run `:PlugInstall` to install all plugins I use.\
 1. Close nvim and install all the [coc.nvim](https://github.com/neoclide/coc.nvim) extensions by running `~/dotfiles/.vim/coc/setup.sh`
 1. Download and install the correct font from [here](https://github.com/powerline/fonts). Link to exact font [here](https://github.com/powerline/fonts/blob/master/Meslo%20Slashed/Meslo%20LG%20L%20Regular%20for%20Powerline.ttf)
 1. If you are not using a gui vim instance (GVIM or MacVim) set your terminal font to the font you downloaded
