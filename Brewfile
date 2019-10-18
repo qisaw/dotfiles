@@ -57,8 +57,8 @@ cask google-cloud-sdk
 cask java
 cask lastpass
 cask pgadmin4
-cask spectacle
-cask whatsapp
+cask slack
+cask spotify
 
 tap rcmdnk/file
 brew brew-file
@@ -72,8 +72,9 @@ cask google-chrome
 cask iterm2
 cask karabiner-elements
 cask minikube
-cask slack
-cask spotify
+cask postman
+cask spectacle
+cask whatsapp
 
 # App Store applications
 appstore 682658836 GarageBand (10.3.2)
