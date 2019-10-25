@@ -60,6 +60,9 @@ cask pgadmin4
 cask slack
 cask spotify
 
+tap johanhaleby/kubetail
+brew kubetail
+
 tap rcmdnk/file
 brew brew-file
 
