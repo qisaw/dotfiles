@@ -37,5 +37,6 @@ Plug 'HerringtonDarkholme/yats.vim'
 Plug 'martinda/Jenkinsfile-vim-syntax'
 Plug 'kristijanhusak/vim-js-file-import', {'do': 'npm install'}
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install' }
+Plug 'aklt/plantuml-syntax'
 call plug#end()              " required
 filetype plugin indent on    " required
