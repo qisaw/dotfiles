@@ -46,3 +46,18 @@ This is my current vim config. I currently use [neovim](https://neovim.io/), but
 
 You are done!!! Enjoy my nvim config
 
+## Automatic Installation (Beta)
+You can use the automated script to setup neovim, plugins and everything. It just runs the above commands in a bash script
+
+1. You need to clone this repository into `$HOME/dotfiles`
+    ~~~
+    cd $HOME
+    git clone git@github.com:qisaw/dotfiles.git
+    ~~~
+2. Run the vim install script
+    ~~~
+    cd dotfiles/.vim/install
+    ./install.sh
+    ~~~
+
+You are done!!! Enjoy my nvim config
