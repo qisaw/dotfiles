@@ -16,8 +16,12 @@ curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \
 echo "==================== Linking coc-settings ==================="
 ln -s ~/dotfiles/.vim/coc/coc-settings.json ~/.config/nvim/coc-settings.json
 
+echo "===================== Installing plugins ===================="
+nvim +PlugInstall +qall
+
+echo "==================== Installing CoC plugins ================="
+../coc/setup.sh
+
 echo "============================================================="
-echo " Finished! To install plugins open vim and run :PlugInstall"
-echo "============================================================="
-echo " Then to install coc-plugins run ~/dotfiles/.vim/coc/setup.sh"
+echo "                Finished! Your VIM Setup is complete         "
 echo "============================================================="
