@@ -1,6 +1,12 @@
-# Installation
+# Automatic Installation
+To set up my bash config, simply run the following command
+```
+cd $HOME/dotfiles
+./bash/install/install.sh
+```
 
-To set up my bash config, simply add a new entry in `~/.bash_profile` or `~/.bashrc`
+# Manual Installation
+To install my bash profile manually, add a new entry in `~/.bash_profile` or `~/.bashrc`
 ```
 echo "source ~/dotfiles/.bash_profile" >> ~/.bash_profile
 ```
