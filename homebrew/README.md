@@ -28,3 +28,10 @@ Note: These commands are taken from the following [link](https://homebrew-file.r
     ```
     brew file install
     ```
+## Automatic Installation (Beta)
+To install homebrew, run the following command
+
+~~~
+cd $HOME/dotfiles/homebrew/install
+./install.sh
+~~~
