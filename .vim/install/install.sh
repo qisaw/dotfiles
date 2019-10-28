@@ -23,5 +23,5 @@ echo "==================== Installing CoC plugins ================="
 ../coc/setup.sh
 
 echo "============================================================="
-echo "                Finished! Your VIM Setup is complete         "
+echo "             Finished! Your VIM Setup is complete            "
 echo "============================================================="
