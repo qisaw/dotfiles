@@ -3,18 +3,6 @@
 set -o nounset    # error when referencing undefined variable
 set -o errexit    # exit when command fails
 
-# Install latest nodejs
-if ! command -v node > /dev/null; then
-  curl --fail -L https://install-node.now.sh/latest | sh
-  # Or use apt-get
-  # sudo apt-get install nodejs
-fi
-
-# Install yarn
-if ! command -v yarn > /dev/null; then
-  curl --fail -L https://yarnpkg.com/install.sh | sh
-fi
-
 # Use package feature to install coc.nvim
 # If you want to use plugin manager, change DIR to plugin directory used by that manager.
 #DIR=~/.local/share/nvim/site/pack/coc/start
