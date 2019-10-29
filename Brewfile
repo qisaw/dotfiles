@@ -55,7 +55,6 @@ cask alfred
 cask flycut
 cask google-cloud-sdk
 cask java
-cask lastpass
 cask pgadmin4
 cask slack
 cask spotify
@@ -70,6 +69,7 @@ tap universal-ctags/universal-ctags
 brew universal-ctags --HEAD
 
 # Other Cask applications
+cask 1Password
 cask docker
 cask google-chrome
 cask iterm2
