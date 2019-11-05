@@ -15,5 +15,6 @@
   },
   "coc.preferences.colorSupport": true,
   "suggest.enablePreview": true,
-  "diagnostic.checkCurrentLine": true
+  "diagnostic.checkCurrentLine": true,
+  "eslint.autoFixOnSave": true
 }
