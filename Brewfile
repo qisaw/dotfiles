@@ -52,9 +52,10 @@ brew xz
 
 tap homebrew/cask
 cask alfred
-cask flycut
-cask google-cloud-sdk
-cask java
+cask docker
+cask google-chrome
+cask iterm2
+cask karabiner-elements
 cask pgadmin4
 cask slack
 cask spotify
@@ -70,10 +71,10 @@ brew universal-ctags --HEAD
 
 # Other Cask applications
 cask 1Password
-cask docker
-cask google-chrome
-cask iterm2
-cask karabiner-elements
+cask caffeine
+cask flycut
+cask google-cloud-sdk
+cask java
 cask minikube
 cask postman
 cask spectacle
