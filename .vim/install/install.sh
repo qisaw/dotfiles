@@ -22,6 +22,15 @@ nvim +PlugInstall +qall
 echo "==================== Installing CoC plugins ================="
 ../coc/setup.sh
 
+echo "===== Installing Meslo LG L Regular for Powerline Font ======"
+fonts="$HOME/Library/Fonts"
+font="Meslo LG L Regular for Powerline.ttf"
+curl -fSL \
+  "https://github.com/powerline/fonts/raw/master/Meslo%20Slashed/${font// /%20}" \
+  > "${HOME}/Library/Fonts/${font}"
+
+cd $HOME/dotfiles/.vim/install
+
 echo "============================================================="
 echo "             Finished! Your VIM Setup is complete            "
 echo "============================================================="
