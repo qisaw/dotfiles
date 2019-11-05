@@ -4,8 +4,8 @@ set -o nounset    # error when referencing undefined variable
 set -o errexit    # exit when command fails
 
 # Install extensions
-mkdir -p ~/.config/coc/extensions
-cd ~/.config/coc/extensions
+mkdir -p ${HOME}/.config/coc/extensions
+cd ${HOME}/.config/coc/extensions
 if [ ! -f package.json ]
 then
   echo '{"dependencies":{}}'> package.json
