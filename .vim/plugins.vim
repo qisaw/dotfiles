@@ -35,6 +35,7 @@ Plug 'junegunn/fzf.vim'
 Plug 'neoclide/coc.nvim', {'do': './install.sh nightly'}
 Plug 'HerringtonDarkholme/yats.vim'
 Plug 'martinda/Jenkinsfile-vim-syntax'
+Plug 'ludovicchabant/vim-gutentags'
 Plug 'kristijanhusak/vim-js-file-import', {'do': 'npm install'}
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install' }
 Plug 'aklt/plantuml-syntax'

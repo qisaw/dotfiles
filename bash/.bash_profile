@@ -66,7 +66,7 @@ if [ -f '/Users/wasiqkashkari/google-cloud-sdk/completion.bash.inc' ]; then . '/
 # git
 git config --global user.name "Wasiq Kashkari"
 git config --global user.email "w.kashkari@outlook.com"
-git config --global core.excludesfile ~/dotfiles/bash/.gitignore
+git config --global core.excludesfile ~/dotfiles/.gitignore
 
 # key repeat rate
 defaults write -g InitialKeyRepeat -int 10 # normal minimum is 15 (225 ms)
