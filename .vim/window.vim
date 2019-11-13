@@ -8,6 +8,12 @@ nnoremap <leader>y <C-W><C-H>
 nnoremap <leader><leader>r <C-W><C-R>
 nnoremap <leader><leader>R <C-W>R
 
+"resizing windows
+nnoremap <leader>+ <C-W>+
+nnoremap <leader>- <C-W>-
+nnoremap <leader>< <C-W><
+nnoremap <leader>> <C-W>>
+
 "creating new windows
 nnoremap <leader><leader>s <C-W><C-S>
 nnoremap <leader><leader>v <C-W><C-V>
