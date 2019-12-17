@@ -1,7 +1,6 @@
 export JAVA_HOME=$(/usr/libexec/java_home)
 export ANDROID_HOME="${HOME}/Library/Android/sdk"
 export PATH="${PATH}:$JAVA_HOME/bin"
-export PATH="$HOME/.fastlane/bin:$PATH"
 export PATH=${PATH}:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools
 export ENVIRONMENT=dev
 export REACT_EDITOR=nvim
