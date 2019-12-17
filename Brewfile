@@ -53,12 +53,15 @@ brew xz
 tap homebrew/cask
 cask alfred
 cask docker
+cask flycut
 cask google-chrome
 cask iterm2
 cask karabiner-elements
 cask pgadmin4
 cask slack
 cask spotify
+cask vlc
+cask whatsapp
 
 tap johanhaleby/kubetail
 brew kubetail
@@ -67,18 +70,22 @@ tap rcmdnk/file
 brew brew-file
 
 tap universal-ctags/universal-ctags
-brew universal-ctags --HEAD
+
+# Other Homebrew packages
+brew nvim
 
 # Other Cask applications
 cask 1Password
 cask caffeine
-cask flycut
+cask expressvpn
+cask gimp
 cask google-cloud-sdk
 cask java
 cask minikube
 cask postman
 cask spectacle
-cask whatsapp
+cask teamviewer
+cask webtorrent
 
 # App Store applications
 appstore 682658836 GarageBand (10.3.2)
