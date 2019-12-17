@@ -26,8 +26,6 @@ alias gp="git push --follow-tags"
 alias gt="git tag"
 alias gpl="git pull --rebase"
 alias adbtcp="adb reverse tcp:9090 tcp:9090"
-alias bastionprod="ssh -A ubuntu@35.164.1.250"
-alias bastioncat="ssh -A ubuntu@52.11.215.109"
 
 function parse_git_branch {
   git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ \1/' -e "s/ //"
