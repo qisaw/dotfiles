@@ -6,6 +6,6 @@ endif
 
 " bind <leader>g to grep word under cursor
 nnoremap <leader>g :grep! "\b<C-R><C-W>\b"<CR>:cw<CR>
-nnoremap <leader>r :%s/\<<C-R><C-W>\>/
+nnoremap <leader>rw :%s/\<<C-R><C-W>\>/
 " show grep results in a new window
 autocmd QuickFixCmdPost *grep* cwindow
