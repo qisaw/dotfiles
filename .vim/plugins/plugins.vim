@@ -11,3 +11,4 @@ source ~/dotfiles/.vim/plugins/vim-javascript.vim
 source ~/dotfiles/.vim/plugins/vim-terraform.vim
 source ~/dotfiles/.vim/plugins/fzf.vim.vim
 source ~/dotfiles/.vim/plugins/vim-fugitive.vim
+source ~/dotfiles/.vim/plugins/vim-indent-guides.vim
