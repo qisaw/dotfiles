@@ -49,6 +49,7 @@ brew watch
 brew webp
 brew wget
 brew xz
+brew zplug
 
 tap homebrew/cask
 cask alfred
