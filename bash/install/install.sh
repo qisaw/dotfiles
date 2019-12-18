@@ -9,6 +9,13 @@ echo "                 Setting up config for bash                  "
 echo "============================================================="
 echo "source ~/dotfiles/.bash_profile" >> ~/.bash_profile
 
+echo "============================================================="
+echo "                    Installing oh-my-zsh                     "
+echo "============================================================="
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+# TODO add zsh installation
+echo "source ~/dotfiles/bash/.zsh_profile" >> ~/.zshrc
+
 echo "=================== Sourcing bash_profile ==================="
 source ~/.bash_profile
 
