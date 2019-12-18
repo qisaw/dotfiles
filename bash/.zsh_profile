@@ -97,7 +97,7 @@ zplug "lukechilds/zsh-better-npm-completion", defer:2
 zplug "buonomo/yarn-completion", nice:10
 
 # Install plugins if there are plugins that have not been installed
-if ! zplug check --verbose; then
+if ! zplug check ; then
   printf "Install? [y/N]: "
   if read -q; then
     echo; zplug install
@@ -108,3 +108,5 @@ fi
 zplug load
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+source ~/.oh-my-zsh/themes/agnoster.zsh-theme
