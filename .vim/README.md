@@ -59,5 +59,6 @@ You can use the automated script to setup neovim, plugins and everything. It jus
     cd dotfiles/.vim/install
     ./install.sh
     ~~~
+3. Set Iterm2 Font to Meslo L LG For Powerline in Preferences > Profiles > Text > Font
 
 You are done!!! Enjoy my nvim config
