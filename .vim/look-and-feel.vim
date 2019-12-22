@@ -10,5 +10,5 @@ else
   " use deep-space in nvim
   set termguicolors
   set background=dark
-  colorscheme deep-space
+  colorscheme solarized8
 endif

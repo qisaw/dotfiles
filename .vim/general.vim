@@ -8,9 +8,9 @@ set nowrap
 "if we use a capital it will look for case sensitive
 set ignorecase
 set smartcase
-set nu
 set showmatch
 set linespace=0
+set relativenumber
 "yank to clipboard
 set clipboard+=unnamed
 "allow use to use bash

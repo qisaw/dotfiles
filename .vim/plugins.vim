@@ -41,6 +41,7 @@ Plug 'aklt/plantuml-syntax'
 Plug 'tyru/open-browser.vim'
 Plug 'weirongxu/plantuml-previewer.vim'
 Plug 'tpope/vim-rhubarb'
+Plug 'lifepillar/vim-solarized8'
 
 call plug#end()              " required
 filetype plugin indent on    " required
