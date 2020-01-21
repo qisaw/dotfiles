@@ -11,6 +11,8 @@ set smartcase
 set showmatch
 set linespace=0
 set relativenumber
+set number
+set scrolloff=3
 "yank to clipboard
 set clipboard+=unnamed
 "allow use to use bash
