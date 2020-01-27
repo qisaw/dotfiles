@@ -10,6 +10,7 @@ brew gd
 brew gdbm
 brew gettext
 brew glib
+brew go
 brew graphviz
 brew gts
 brew icu4c
