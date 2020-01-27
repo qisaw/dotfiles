@@ -23,4 +23,5 @@ yarn add \
   coc-vimlsp \
   coc-sh \
   coc-highlight \
-  coc-tslint-plugin
+  coc-tslint-plugin \
+  coc-go
