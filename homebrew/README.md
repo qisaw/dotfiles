@@ -31,6 +31,7 @@ Note: These commands are taken from the following [link](https://homebrew-file.r
 1) install GO dev tools
     ```
     go get golang.org/x/tools/cmd/godoc
+    go get golang.org/x/tools/gopls
     ```
 
 ## Automatic Installation (Beta)

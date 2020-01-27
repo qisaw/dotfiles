@@ -24,6 +24,7 @@ brew file install
 
 echo "============= Installing GO dev tools ======================="
 go get golang.org/x/tools/cmd/godoc
+go get golang.org/x/tools/gopls
 
 echo "============================================================="
 echo "            Finished! Setting up homebrew packages           "
