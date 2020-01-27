@@ -22,6 +22,9 @@ brew set_repo -r qisaw/dotfiles
 echo "==================== Installing packages ===================="
 brew file install
 
+echo "============= Installing GO dev tools ======================="
+go get golang.org/x/tools/cmd/godoc
+
 echo "============================================================="
 echo "            Finished! Setting up homebrew packages           "
 echo "============================================================="
