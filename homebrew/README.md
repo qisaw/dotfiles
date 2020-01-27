@@ -28,6 +28,11 @@ Note: These commands are taken from the following [link](https://homebrew-file.r
     ```
     brew file install
     ```
+1) install GO dev tools
+    ```
+    go get golang.org/x/tools/cmd/godoc
+    ```
+
 ## Automatic Installation (Beta)
 To install homebrew, run the following command
 

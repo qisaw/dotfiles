@@ -9,6 +9,12 @@ cd $HOME/dotfiles
 To install my bash profile manually, add a new entry in `~/.bash_profile` or `~/.bashrc`
 ```
 echo "source ~/dotfiles/bash/.zsh_profile" >> ~/.zshrc
+
+source ~/.bash_profile
+# use the node version you would like to install
+nvm install ${INTERNAL_NODE_VERSION}
+# install yarn
+npm install -g yarn
 ```
 
 <i>
