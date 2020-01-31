@@ -64,8 +64,7 @@ cask karabiner-elements
 cask pgadmin4
 cask slack
 cask spotify
-cask vlc
-cask whatsapp
+cask webtorrent
 
 tap johanhaleby/kubetail
 brew kubetail
@@ -88,8 +87,8 @@ cask java
 cask minikube
 cask postman
 cask spectacle
-cask teamviewer
-cask webtorrent
+cask vlc
+cask whatsapp
 
 # App Store applications
 appstore 682658836 GarageBand (10.3.2)
