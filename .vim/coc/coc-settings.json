@@ -13,8 +13,11 @@
       "rootPatterns": [".flowconfig"]
     }
   },
+  "tsserver.npm": "/Users/wasiqkashkari/.nvm/versions/node/v12.14.1/bin/npm",
   "coc.preferences.colorSupport": true,
   "suggest.enablePreview": true,
   "diagnostic.checkCurrentLine": true,
-  "eslint.autoFixOnSave": true
+  "eslint.autoFixOnSave": true,
+  "javascript.format.enabled": true,
+  "javascript.showUnused": true
 }

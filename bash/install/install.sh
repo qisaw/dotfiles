@@ -2,7 +2,7 @@
  
 set -euo pipefail
 
-INTERNAL_NODE_VERSION=${NODE_VERSION_TO_INSTALL:=10}
+INTERNAL_NODE_VERSION=${NODE_VERSION_TO_INSTALL:=12.4.1}
 
 echo "============================================================="
 echo "                 Setting up config for bash                  "
@@ -24,6 +24,9 @@ nvm install ${INTERNAL_NODE_VERSION}
 
 echo "====================== Installing Yarn ======================"
 npm install -g yarn
+
+echo "================= Installing Autosuggestions ================="
+git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 
 echo "============================================================="
 echo "            Finished! Your bash Setup is complete            "

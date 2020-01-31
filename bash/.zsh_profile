@@ -94,6 +94,7 @@ source $ZPLUG_HOME/init.zsh
 
 # Load theme file
 zplug "lukechilds/zsh-better-npm-completion", defer:2
+zplug "buonomo/yarn-completion", defer:2
 
 # Install plugins if there are plugins that have not been installed
 if ! zplug check ; then
