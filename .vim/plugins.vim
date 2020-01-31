@@ -2,7 +2,6 @@ set nocompatible              " be iMproved, required
 filetype off                  " required
 
 call plug#begin('~/.vim/plugged')
-Plug 'VundleVim/Vundle.vim'
 Plug 'tpope/vim-fugitive'
 Plug 'pangloss/vim-javascript'
 Plug 'mxw/vim-jsx'
@@ -11,19 +10,15 @@ Plug 'airblade/vim-gitgutter'
 Plug 'moll/vim-node'
 Plug 'altercation/vim-colors-solarized'
 Plug 'scrooloose/nerdtree'
-Plug 'kchmck/vim-coffee-script'
 Plug 'tpope/vim-surround'
 Plug 'scrooloose/nerdcommenter'
-Plug 'derekwyatt/vim-scala'
 Plug 'jiangmiao/auto-pairs'
-Plug 'danro/rename.vim'
 Plug 'easymotion/vim-easymotion'
 Plug 'mhartington/vim-typings'
 Plug 'airblade/vim-rooter'
 Plug 'ap/vim-css-color'
 Plug 'nathanaelkane/vim-indent-guides'
 Plug 'hashivim/vim-terraform'
-Plug 'posva/vim-vue'
 Plug 'othree/javascript-libraries-syntax.vim'
 Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
 Plug 'vim-airline/vim-airline'
