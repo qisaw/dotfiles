@@ -17,9 +17,10 @@ To install all the above simply run the following command
 
 **Note: This will install both `node` and `yarn` as they are requirements for a lot of the above.
 You can choose which node version to use by changing the following environment variable.
-Currently this defaults to 10.**
+Currently this defaults to 12.4.1.
+If you would like to change this, you will also need to update the version of node you use for coc-tsserver in the [coc-settings.json](./.vim/coc/coc-settings.json)**
 
 
 ~~~
-NODE_VERSION_TO_INSTALL=10
+NODE_VERSION_TO_INSTALL=12.4.1
 ~~~
