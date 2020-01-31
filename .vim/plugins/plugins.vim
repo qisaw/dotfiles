@@ -1,5 +1,4 @@
 source ~/dotfiles/.vim/plugins/easymotion.vim
-source ~/dotfiles/.vim/plugins/vim-git-gutter.vim
 source ~/dotfiles/.vim/plugins/nerdtree.vim
 source ~/dotfiles/.vim/plugins/nerdcommenter.vim
 source ~/dotfiles/.vim/plugins/vim-airline.vim
