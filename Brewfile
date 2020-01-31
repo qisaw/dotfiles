@@ -4,6 +4,7 @@
 tap homebrew/core
 brew autoconf
 brew automake
+brew bat
 brew fontconfig
 brew freetype
 brew gd
@@ -33,6 +34,7 @@ brew msgpack
 brew neovim
 brew netpbm
 brew nvm
+brew opa
 brew openssl@1.1
 brew pcre
 brew pkg-config
