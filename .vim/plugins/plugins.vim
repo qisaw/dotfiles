@@ -1,7 +1,7 @@
 source ~/dotfiles/.vim/plugins/easymotion.vim
 source ~/dotfiles/.vim/plugins/nerdtree.vim
 source ~/dotfiles/.vim/plugins/nerdcommenter.vim
-source ~/dotfiles/.vim/plugins/vim-airline.vim
+source ~/dotfiles/.vim/plugins/lightline.vim
 source ~/dotfiles/.vim/plugins/coc-nvim.vim
 source ~/dotfiles/.vim/plugins/vim-js-file-import.vim
 source ~/dotfiles/.vim/plugins/vim-jsx.vim

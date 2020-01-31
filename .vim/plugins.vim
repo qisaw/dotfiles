@@ -20,8 +20,6 @@ Plug 'nathanaelkane/vim-indent-guides'
 Plug 'hashivim/vim-terraform'
 Plug 'othree/javascript-libraries-syntax.vim'
 Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
-Plug 'vim-airline/vim-airline'
-Plug 'vim-airline/vim-airline-themes'
 Plug 'jaawerth/nrun.vim'
 Plug 'tyrannicaltoucan/vim-deep-space'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
@@ -35,6 +33,7 @@ Plug 'tyru/open-browser.vim'
 Plug 'weirongxu/plantuml-previewer.vim'
 Plug 'tpope/vim-rhubarb'
 Plug 'lifepillar/vim-solarized8'
+Plug 'itchyny/lightline.vim'
 
 call plug#end()              " required
 filetype plugin indent on    " required
