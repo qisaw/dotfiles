@@ -49,6 +49,7 @@ brew tig
 brew unibilium
 brew vault
 brew watch
+brew watchman
 brew webp
 brew wget
 brew xz
