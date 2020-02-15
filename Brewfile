@@ -56,12 +56,12 @@ brew xz
 brew zplug
 
 tap homebrew/cask
-cask alfred
-cask docker
-cask flycut
-cask google-chrome
-cask iterm2
-cask karabiner-elements
+cask ace-link
+cask caffeine
+cask expressvpn
+cask gimp
+cask google-cloud-sdk
+cask java
 cask pgadmin4
 cask slack
 cask spotify
@@ -80,11 +80,12 @@ brew nvim
 
 # Other Cask applications
 cask 1Password
-cask caffeine
-cask expressvpn
-cask gimp
-cask google-cloud-sdk
-cask java
+cask alfred
+cask docker
+cask flycut
+cask google-chrome
+cask iterm2
+cask karabiner-elements
 cask minikube
 cask postman
 cask spectacle
