@@ -3,15 +3,15 @@
   // symlink this to ~/.config/nvim/coc-settings.json
   // ln -s ~/dotfiles/.vim/plugins/coc-settings.json ~/.config/nvim/coc-settings.json
   "languageserver": {
-    "flow": {
-      "command": "./node_modules/.bin/flow",
-      "args": ["lsp"],
-      "filetypes": ["javascript", "javascriptreact"],
-      "initializationOptions": {},
-      "requireRootPattern": true,
-      "settings": {},
-      "rootPatterns": [".flowconfig"]
-    }
+    // "flow": {
+    //   "command": "./node_modules/.bin/flow",
+    //   "args": ["lsp"],
+    //   "filetypes": ["javascript", "javascriptreact"],
+    //   "initializationOptions": {},
+    //   "requireRootPattern": true,
+    //   "settings": {},
+    //   "rootPatterns": [".flowconfig"]
+    // }
   },
   "tsserver.npm": "/Users/wasiqkashkari/.nvm/versions/node/v12.14.1/bin/npm",
   "coc.preferences.colorSupport": true,
@@ -19,5 +19,7 @@
   "diagnostic.checkCurrentLine": true,
   "eslint.autoFixOnSave": true,
   "javascript.format.enabled": true,
-  "javascript.showUnused": true
+  "javascript.showUnused": true,
+  // "tsserver.log": "verbose",
+  // "tsserver.trace.server": "verbose"
 }
