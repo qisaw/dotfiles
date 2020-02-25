@@ -30,6 +30,7 @@ brew libuv
 brew libvterm
 brew luajit
 brew mas
+brew minikube
 brew msgpack
 brew neovim
 brew netpbm
@@ -56,12 +57,13 @@ brew xz
 brew zplug
 
 tap homebrew/cask
-cask ace-link
-cask caffeine
-cask expressvpn
-cask gimp
-cask google-cloud-sdk
-cask java
+cask 1password
+cask alfred
+cask docker
+cask flycut
+cask google-chrome
+cask iterm2
+cask karabiner-elements
 cask pgadmin4
 cask slack
 cask spotify
@@ -75,17 +77,13 @@ brew brew-file
 
 tap universal-ctags/universal-ctags
 
-# Other Homebrew packages
-brew nvim
-
 # Other Cask applications
-cask 1Password
-cask alfred
-cask docker
-cask flycut
-cask google-chrome
-cask iterm2
-cask karabiner-elements
+cask ace-link
+cask caffeine
+cask expressvpn
+cask gimp
+cask google-cloud-sdk
+cask java
 cask minikube
 cask postman
 cask spectacle
@@ -93,8 +91,11 @@ cask vlc
 cask whatsapp
 
 # App Store applications
-appstore 682658836 GarageBand (10.3.2)
-appstore 408981434 iMovie (10.1.11)
-appstore 409183694 Keynote (9.0.1)
-appstore 409203825 Numbers (6.0)
-appstore 409201541 Pages (8.0)
+appstore 682658836 GarageBand (10.3.4)
+appstore 408981434 iMovie (10.1.14)
+appstore 409183694 Keynote (9.2.1)
+appstore 1107644799 Mirror for Samsung TV (3.5.2)
+appstore 409203825 Numbers (6.2.1)
+appstore 409201541 Pages (8.2.1)
+appstore 585829637 Todoist (7.2.4)
+appstore 497799835 Xcode (11.3.1)
