@@ -17,6 +17,7 @@ brew gts
 brew icu4c
 brew jasper
 brew jpeg
+brew jq
 brew kubernetes-cli
 brew kubeseal
 brew libffi
@@ -35,6 +36,7 @@ brew msgpack
 brew neovim
 brew netpbm
 brew nvm
+brew oniguruma
 brew opa
 brew openssl@1.1
 brew pcre
@@ -67,7 +69,8 @@ cask karabiner-elements
 cask pgadmin4
 cask slack
 cask spotify
-cask webtorrent
+cask vlc
+cask whatsapp
 
 tap johanhaleby/kubetail
 brew kubetail
@@ -87,8 +90,8 @@ cask java
 cask minikube
 cask postman
 cask spectacle
-cask vlc
-cask whatsapp
+cask tunnelblick
+cask webtorrent
 
 # App Store applications
 appstore 682658836 GarageBand (10.3.4)
