@@ -10,6 +10,7 @@ brew freetype
 brew gd
 brew gdbm
 brew gettext
+brew git
 brew glib
 brew go
 brew graphviz
@@ -40,6 +41,7 @@ brew oniguruma
 brew opa
 brew openssl@1.1
 brew pcre
+brew pcre2
 brew pkg-config
 brew plantuml
 brew postgresql
@@ -60,16 +62,27 @@ brew zplug
 
 tap homebrew/cask
 cask 1password
+cask ace-link
 cask alfred
+cask caffeine
 cask docker
+cask expressvpn
 cask flycut
+cask gimp
 cask google-chrome
+cask google-cloud-sdk
 cask iterm2
+cask java
 cask karabiner-elements
 cask pgadmin4
+cask postman
 cask slack
+cask spectacle
 cask spotify
+cask tunnelblick
+cask virtualbox
 cask vlc
+cask webtorrent
 cask whatsapp
 
 tap johanhaleby/kubetail
@@ -81,17 +94,7 @@ brew brew-file
 tap universal-ctags/universal-ctags
 
 # Other Cask applications
-cask ace-link
-cask caffeine
-cask expressvpn
-cask gimp
-cask google-cloud-sdk
-cask java
 cask minikube
-cask postman
-cask spectacle
-cask tunnelblick
-cask webtorrent
 
 # App Store applications
 appstore 682658836 GarageBand (10.3.4)
