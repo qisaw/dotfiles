@@ -17,6 +17,7 @@ set scrolloff=3
 set clipboard+=unnamed
 "allow use to use bash
 set shell=/bin/bash
+set nospell
 
 
 syntax on

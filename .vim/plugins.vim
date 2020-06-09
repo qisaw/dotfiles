@@ -34,6 +34,7 @@ Plug 'weirongxu/plantuml-previewer.vim'
 Plug 'tpope/vim-rhubarb'
 Plug 'lifepillar/vim-solarized8'
 Plug 'itchyny/lightline.vim'
+Plug 'kamykn/spelunker.vim'
 
 call plug#end()              " required
 filetype plugin indent on    " required
