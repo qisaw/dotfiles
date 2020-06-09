@@ -68,7 +68,6 @@ cask caffeine
 cask docker
 cask expressvpn
 cask flycut
-cask gimp
 cask google-chrome
 cask google-cloud-sdk
 cask iterm2
