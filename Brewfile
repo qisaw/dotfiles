@@ -72,7 +72,6 @@ cask google-chrome
 cask google-cloud-sdk
 cask iterm2
 cask java
-cask karabiner-elements
 cask pgadmin4
 cask postman
 cask slack
