@@ -31,14 +31,22 @@ alias ps="cat package.json | jq .scripts"
 alias tm.ks='tmux kill-session'
 alias tm="tmux"
 
-#TERRAFORM
+# TERRAFORM
 alias tp='terraform plan -out=plan.out'
 alias ta='terraform apply plan.out'
 alias dc='docker-compose'
 alias d='docker'
 alias de='docker exec -it'
 
-#LOAD NVM
+# YARN
+alias y='yarn'
+alias yt='yarn test'
+alias yl='yarn lint'
+alias ys='yarn start:dev'
+alias ysf='yarn start:dev:server'
+
+
+# LOAD NVM
 export NVM_DIR=~/.nvm
 source $(brew --prefix nvm)/nvm.sh
 
