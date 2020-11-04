@@ -4,6 +4,7 @@
 tap homebrew/core
 brew autoconf
 brew automake
+brew avro-c
 brew bat
 brew fontconfig
 brew freetype
@@ -16,14 +17,18 @@ brew go
 brew graphviz
 brew gts
 brew icu4c
+brew jansson
 brew jasper
 brew jpeg
 brew jq
+brew kafkacat
 brew kubernetes-cli
 brew kubeseal
 brew libffi
 brew libidn2
 brew libpng
+brew librdkafka
+brew libserdes
 brew libtermkey
 brew libtiff
 brew libtool
@@ -31,6 +36,8 @@ brew libunistring
 brew libuv
 brew libvterm
 brew luajit
+brew lz4
+brew lzlib
 brew mas
 brew minikube
 brew msgpack
@@ -45,9 +52,9 @@ brew pcre2
 brew pkg-config
 brew plantuml
 brew postgresql
-brew python
 brew readline
 brew redis
+brew snappy
 brew sqlite
 brew the_silver_searcher
 brew tig
@@ -58,7 +65,9 @@ brew watchman
 brew webp
 brew wget
 brew xz
+brew yajl
 brew zplug
+brew zstd
 
 tap homebrew/cask
 cask 1password
@@ -68,12 +77,13 @@ cask caffeine
 cask docker
 cask expressvpn
 cask flycut
+cask gimp
 cask google-chrome
 cask google-cloud-sdk
 cask iterm2
-cask java
 cask pgadmin4
 cask postman
+cask signal
 cask slack
 cask spectacle
 cask spotify
@@ -91,7 +101,11 @@ brew brew-file
 
 tap universal-ctags/universal-ctags
 
+# Other Homebrew packages
+brew python
+
 # Other Cask applications
+cask java
 cask minikube
 
 # App Store applications
