@@ -25,4 +25,5 @@ yarn add \
   coc-highlight \
   coc-tslint-plugin \
   coc-sql \
-  coc-go
+  coc-go \
+  coc-swagger

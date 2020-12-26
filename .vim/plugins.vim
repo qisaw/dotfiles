@@ -24,7 +24,7 @@ Plug 'jaawerth/nrun.vim'
 Plug 'tyrannicaltoucan/vim-deep-space'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
-Plug 'neoclide/coc.nvim', {'do': './install.sh nightly'}
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'HerringtonDarkholme/yats.vim'
 Plug 'martinda/Jenkinsfile-vim-syntax'
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install' }

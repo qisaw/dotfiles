@@ -25,7 +25,7 @@ alias gp="git push --follow-tags"
 alias gt="git tag"
 alias gpl="git pull --rebase"
 alias adbtcp="adb reverse tcp:9090 tcp:9090"
-alias ps="cat package.json | jq .scripts"
+alias psc="cat package.json | jq .scripts"
 
 
 alias tm.ks='tmux kill-session'
