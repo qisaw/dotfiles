@@ -108,7 +108,6 @@ brew python
 
 # Other Cask applications
 cask java
-cask minikube
 
 # App Store applications
 appstore 682658836 GarageBand (10.3.4)
