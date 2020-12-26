@@ -81,6 +81,7 @@ cask gimp
 cask google-chrome
 cask google-cloud-sdk
 cask iterm2
+cask kindle
 cask pgadmin4
 cask postman
 cask signal
@@ -102,6 +103,7 @@ brew brew-file
 tap universal-ctags/universal-ctags
 
 # Other Homebrew packages
+brew firefox
 brew python
 
 # Other Cask applications
