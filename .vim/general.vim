@@ -29,6 +29,7 @@ set suffixesadd+=.vue
 au bufnewfile,bufread *.es6 set filetype=javascript
 au BufNewFile,BufRead *.flow set filetype=javascript
 au BufNewFile,BufRead *.vue set filetype=javascript
+au BufNewFile,BufRead *Dockerfile* set filetype=dockerfile
 
 nnoremap <leader>ev :vsplit $MYVIMRC<cr>
 nnoremap <leader>sv :source $MYVIMRC<cr>
