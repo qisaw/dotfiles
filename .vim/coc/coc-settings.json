@@ -2,7 +2,7 @@
   // this is a jsonc file that supports comments
   // symlink this to ~/.config/nvim/coc-settings.json
   // ln -s ~/dotfiles/.vim/plugins/coc-settings.json ~/.config/nvim/coc-settings.json
-  "tsserver.npm": "/Users/wasiqkashkari/.nvm/versions/node/v12.14.1/bin/npm",
+  // "tsserver.npm": "/Users/wasiqkashkari/.nvm/versions/node/v12.14.1/bin/npm",
   "coc.preferences.colorSupport": true,
   "suggest.enablePreview": true,
   "diagnostic.checkCurrentLine": true,

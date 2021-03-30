@@ -49,12 +49,6 @@ alias ysf='yarn start:dev:server'
 export NVM_DIR=~/.nvm
 source $(brew --prefix nvm)/nvm.sh
 
-# The next line updates PATH for the Google Cloud SDK.
-if [ -f '/Users/wasiqkashkari/google-cloud-sdk/path.bash.inc' ]; then . '/Users/wasiqkashkari/google-cloud-sdk/path.bash.inc'; fi
-
-# The next line enables shell command completion for gcloud.
-if [ -f '/Users/wasiqkashkari/google-cloud-sdk/completion.bash.inc' ]; then . '/Users/wasiqkashkari/google-cloud-sdk/completion.bash.inc'; fi
-
 #[ -f ~/.fzf.bash ] && source ~/.fzf.bash
 
 # git
@@ -85,12 +79,6 @@ export HELM_HOME=~/.helm
 if [ -f $(brew --prefix)/etc/brew-wrap ];then
   source $(brew --prefix)/etc/brew-wrap
 fi
-
-# gcloud
-source "$(brew --prefix)/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.bash.inc"
-
-# vault
-export VAULT_ADDR=https://vault.actano.de
 
 export ZPLUG_HOME=/usr/local/opt/zplug
 source $ZPLUG_HOME/init.zsh
@@ -125,3 +113,5 @@ export PATH="$PATH:${GOPATH}/bin:${GOROOT}/bin"
 test -d "${GOPATH}" || mkdir "${GOPATH}"
 test -d "${GOPATH}/src/github.com" || mkdir -p "${GOPATH}/src/github.com"
 
+autoload bashcompinit && bashcompinit
+complete -C '/usr/local/bin/aws_completer' aws
