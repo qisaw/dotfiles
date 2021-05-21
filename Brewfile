@@ -128,11 +128,8 @@ brew brew-file
 tap universal-ctags/universal-ctags
 
 # App Store applications
-appstore 682658836 GarageBand (10.4.2)
 appstore 408981434 iMovie (10.2.3)
 appstore 409183694 Keynote (10.3.9)
-appstore 1107644799 Mirror for Samsung TV (3.5.7)
 appstore 409203825 Numbers (10.3.9)
 appstore 409201541 Pages (10.3.9)
-appstore 585829637 Todoist (7.5)
 appstore 497799835 Xcode (12.4)
