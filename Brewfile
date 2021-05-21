@@ -54,11 +54,12 @@ brew libxdmcp
 brew libxext
 brew libxrender
 brew libyaml
-brew luajit
 brew luajit-openresty
+brew luv
 brew lz4
 brew lzlib
 brew lzo
+brew m4
 brew mas
 brew mpdecimal
 brew msgpack
@@ -84,11 +85,10 @@ brew redis
 brew snappy
 brew sqlite
 brew tcl-tk
-brew tfenv
+brew terraform
 brew the_silver_searcher
 brew tig
 brew unibilium
-brew vault
 brew watch
 brew watchman
 brew webp
@@ -128,8 +128,10 @@ brew brew-file
 tap universal-ctags/universal-ctags
 
 # App Store applications
-appstore 408981434 iMovie (10.2.3)
-appstore 409183694 Keynote (10.3.9)
-appstore 409203825 Numbers (10.3.9)
-appstore 409201541 Pages (10.3.9)
-appstore 497799835 Xcode (12.4)
+appstore 1432731683  Adblock Plus  (2.1.10)
+appstore 408981434   iMovie        (10.2.3)
+appstore 409183694   Keynote       (11.0.1)
+appstore 409203825   Numbers       (11.0)
+appstore 409201541   Pages         (11.0)
+appstore 1480933944  Vimari        (2.1.1)
+appstore 497799835   Xcode         (12.5)
