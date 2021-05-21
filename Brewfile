@@ -32,7 +32,6 @@ brew jansson
 brew jasper
 brew jpeg
 brew jq
-brew kafkacat
 brew krb5
 brew kubernetes-cli
 brew kubeseal
@@ -40,7 +39,6 @@ brew libffi
 brew libidn2
 brew libpng
 brew libpthread-stubs
-brew librdkafka
 brew librsvg
 brew libserdes
 brew libtermkey
@@ -62,7 +60,6 @@ brew lz4
 brew lzlib
 brew lzo
 brew mas
-brew minikube
 brew mpdecimal
 brew msgpack
 brew ncurses
@@ -107,28 +104,17 @@ tap homebrew/cask-versions
 
 tap homebrew/cask
 cask 1password
-cask ace-link
 cask adoptopenjdk
 cask alfred
-cask caffeine
 cask dbeaver-community
 cask docker
-cask expressvpn
-cask firefox
 cask flycut
-cask gimp
-cask google-chrome
 cask iterm2
-cask kindle
 cask ngrok
-cask pgadmin4
-cask postico
 cask postman
-cask signal
 cask slack
 cask spectacle
 cask spotify
-cask tunnelblick
 cask vlc
 
 tap adoptopenjdk/openjdk
