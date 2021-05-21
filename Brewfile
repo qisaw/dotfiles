@@ -5,8 +5,11 @@ tap homebrew/core
 brew autoconf
 brew automake
 brew avro-c
+brew awscli
 brew bat
 brew cairo
+brew docker
+brew docker-compose
 brew fontconfig
 brew freetype
 brew fribidi
@@ -20,6 +23,7 @@ brew go
 brew gobject-introspection
 brew graphite2
 brew graphviz
+brew grep
 brew gts
 brew harfbuzz
 brew helm
@@ -35,6 +39,7 @@ brew kubeseal
 brew libffi
 brew libidn2
 brew libpng
+brew libpthread-stubs
 brew librdkafka
 brew librsvg
 brew libserdes
@@ -44,12 +49,21 @@ brew libtool
 brew libunistring
 brew libuv
 brew libvterm
+brew libx11
+brew libxau
+brew libxcb
+brew libxdmcp
+brew libxext
+brew libxrender
+brew libyaml
 brew luajit
+brew luajit-openresty
 brew lz4
 brew lzlib
 brew lzo
 brew mas
 brew minikube
+brew mpdecimal
 brew msgpack
 brew ncurses
 brew neovim
@@ -72,6 +86,8 @@ brew readline
 brew redis
 brew snappy
 brew sqlite
+brew tcl-tk
+brew tfenv
 brew the_silver_searcher
 brew tig
 brew unibilium
@@ -80,26 +96,33 @@ brew watch
 brew watchman
 brew webp
 brew wget
+brew xorgproto
 brew xz
 brew yajl
+brew zlib
 brew zplug
 brew zstd
+
+tap homebrew/cask-versions
 
 tap homebrew/cask
 cask 1password
 cask ace-link
+cask adoptopenjdk
 cask alfred
 cask caffeine
+cask dbeaver-community
 cask docker
 cask expressvpn
 cask firefox
 cask flycut
 cask gimp
 cask google-chrome
-cask google-cloud-sdk
 cask iterm2
 cask kindle
+cask ngrok
 cask pgadmin4
+cask postico
 cask postman
 cask signal
 cask slack
@@ -107,8 +130,8 @@ cask spectacle
 cask spotify
 cask tunnelblick
 cask vlc
-cask webtorrent
-cask whatsapp
+
+tap adoptopenjdk/openjdk
 
 tap johanhaleby/kubetail
 brew kubetail
@@ -118,15 +141,12 @@ brew brew-file
 
 tap universal-ctags/universal-ctags
 
-# Other Cask applications
-cask java
-
 # App Store applications
-appstore 682658836 GarageBand (10.3.5)
-appstore 408981434 iMovie (10.1.15)
-appstore 409183694 Keynote (10.1)
-appstore 1107644799 Mirror for Samsung TV (3.5.2)
-appstore 409203825 Numbers (10.1)
-appstore 409201541 Pages (10.1)
-appstore 585829637 Todoist (7.3.4)
-appstore 497799835 Xcode (12.0)
+appstore 682658836 GarageBand (10.4.2)
+appstore 408981434 iMovie (10.2.3)
+appstore 409183694 Keynote (10.3.9)
+appstore 1107644799 Mirror for Samsung TV (3.5.7)
+appstore 409203825 Numbers (10.3.9)
+appstore 409201541 Pages (10.3.9)
+appstore 585829637 Todoist (7.5)
+appstore 497799835 Xcode (12.4)
