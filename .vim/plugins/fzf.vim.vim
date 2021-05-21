@@ -1,8 +1,8 @@
-map <C-A> :Files<CR>
-map <C-P> :GFiles<CR>
-map <C-F> :Ag<CR>
-map <C-B> :Buffer<CR>
-map <leader><leader>gc :Commits<CR>
+nnoremap <C-A> :Files<CR>
+nnoremap <C-P> :GFiles --exclude-standard --cached --others<CR>
+nnoremap <C-F> :Ag<CR>
+nnoremap <C-B> :Buffer<CR>
+nnoremap <leader><leader>gc :Commits<CR>
 
 let g:fzf_buffers_jump = 1
 
