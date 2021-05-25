@@ -21,7 +21,10 @@ nvm install ${INTERNAL_NODE_VERSION}
 # install yarn
 npm install -g yarn
 ```
-
+3. Add Solarizd Dark Patched Color Preset. The color preset is [here](https://github.com/mbadolato/iTerm2-Color-Schemes/blob/master/schemes/Solarized%20Dark%20-%20Patched.itermcolors)
+```
+curl --output Solarized\ Dark\ Patched.itermcolors  https://raw.githubusercontent.com/mbadolato/iTerm2-Color-Schemes/master/schemes/Solarized%20Dark%20-%20Patched.itermcolors
+```
 <i>
 Note: 
 The zsh profile set the key repeat rate which only gets applied after you have logged in and out.
