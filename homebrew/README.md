@@ -7,6 +7,7 @@ To install homebrew simply run the following command
 
 ```
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+eval "$(/opt/homebrew/bin/brew shellenv)"
 ```
 ## Installation
 To install homebrew, run the following commands
@@ -16,16 +17,13 @@ Note: These commands are taken from the following [link](https://homebrew-file.r
     ```
     brew install rcmdnk/file/brew-file
     ```
-1) source the bash_profile
-    ```
-    source ~/dotfiles/bash/.bash_profile
-    ```
 1) set the brewfile repository to `qisaw/dotfiles`
     ```
-    brew set_repo
+    brew file set_repo
     ```
-1) install packages in brewfile
+1) install packages in brewfile rosetta is required for openjdk
     ```
+    sudo softwareupdate --install-rosetta
     brew file install
     ```
 1) install GO dev tools
@@ -39,5 +37,5 @@ To install homebrew, run the following command
 
 ~~~
 cd $HOME/dotfiles/homebrew/install
-./install.sh
+./install.sh 
 ~~~
