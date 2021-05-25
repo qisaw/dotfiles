@@ -109,6 +109,7 @@ cask alfred
 cask dbeaver-community
 cask docker
 cask flycut
+cask google-chrome
 cask iterm2
 cask ngrok
 cask postman
@@ -116,6 +117,7 @@ cask slack
 cask spectacle
 cask spotify
 cask vlc
+cask zoom
 
 tap adoptopenjdk/openjdk
 
@@ -128,10 +130,8 @@ brew brew-file
 tap universal-ctags/universal-ctags
 
 # App Store applications
-appstore 1432731683  Adblock Plus  (2.1.10)
-appstore 408981434   iMovie        (10.2.3)
-appstore 409183694   Keynote       (11.0.1)
-appstore 409203825   Numbers       (11.0)
-appstore 409201541   Pages         (11.0)
-appstore 1480933944  Vimari        (2.1.1)
-appstore 497799835   Xcode         (12.5)
+appstore 408981434   iMovie   (10.2.3)
+appstore 409183694   Keynote  (11.0.1)
+appstore 409203825   Numbers  (11.0)
+appstore 409201541   Pages    (11.0)
+appstore 497799835   Xcode    (12.5)
