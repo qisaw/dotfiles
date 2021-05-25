@@ -25,6 +25,11 @@ npm install -g yarn
 ```
 curl --output Solarized\ Dark\ Patched.itermcolors  https://raw.githubusercontent.com/mbadolato/iTerm2-Color-Schemes/master/schemes/Solarized%20Dark%20-%20Patched.itermcolors
 ```
+4. Download and install the correct font from [here](https://github.com/powerline/fonts). Link to exact font [here](https://github.com/powerline/fonts/blob/master/Meslo%20Slashed/Meslo%20LG%20L%20Regular%20for%20Powerline.ttf)
+```
+curl --output font.ttf https://github.com/powerline/fonts/blob/master/Meslo%20Slashed/Meslo%20LG%20L%20Regular%20for%20Powerline.ttf?raw=true
+```
+
 <i>
 Note: 
 The zsh profile set the key repeat rate which only gets applied after you have logged in and out.
