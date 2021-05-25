@@ -18,7 +18,7 @@ Plug 'airblade/vim-rooter'
 Plug 'nathanaelkane/vim-indent-guides'
 Plug 'hashivim/vim-terraform'
 Plug 'othree/javascript-libraries-syntax.vim'
-Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
+Plug 'prettier/vim-prettier', { 'do': 'npm install' }
 Plug 'jaawerth/nrun.vim'
 Plug 'tyrannicaltoucan/vim-deep-space'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
@@ -26,7 +26,7 @@ Plug 'junegunn/fzf.vim'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'HerringtonDarkholme/yats.vim'
 Plug 'martinda/Jenkinsfile-vim-syntax'
-Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install' }
+Plug 'iamcco/markdown-preview.nvim', { 'do': 'npm i cd app && npm i' }
 Plug 'aklt/plantuml-syntax'
 Plug 'tyru/open-browser.vim'
 Plug 'weirongxu/plantuml-previewer.vim'
