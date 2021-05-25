@@ -27,7 +27,7 @@ curl --output Solarized\ Dark\ Patched.itermcolors  https://raw.githubuserconten
 ```
 4. Download and install the correct font from [here](https://github.com/powerline/fonts). Link to exact font [here](https://github.com/powerline/fonts/blob/master/Meslo%20Slashed/Meslo%20LG%20L%20Regular%20for%20Powerline.ttf)
 ```
-curl --output Meslo\ LG\ Regular\ for\ Powerline.ttf https://github.com/powerline/fonts/raw/master/Meslo%20Slashed/Meslo%20LG%20L%20Regular%20for%20Powerline.ttf
+curl --output Meslo\ LG\ Regular\ for\ Powerline.ttf https://raw.githubusercontent.com/powerline/fonts/master/Meslo%20Slashed/Meslo%20LG%20L%20Regular%20for%20Powerline.ttf
 ```
 
 <i>
