@@ -6,11 +6,16 @@ cd $HOME/dotfiles
 ```
 
 # Manual Installation
-To install my bash profile manually, add a new entry in `~/.bash_profile` or `~/.bashrc`
+To install my bash profile manually
+1. Install [oh-my-zsh](https://github.com/ohmyzsh/ohmyzsh)
+```
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+```
+2. Add a new entry in `~/.zshrc`
 ```
 echo "source ~/dotfiles/bash/.zsh_profile" >> ~/.zshrc
 
-source ~/.bash_profile
+source ~/.zshrc
 # use the node version you would like to install
 nvm install ${INTERNAL_NODE_VERSION}
 # install yarn
@@ -28,10 +33,4 @@ The above command will also install the bash config
 ```
 cd $HOME/dotfiles
 ./bash/install/install.sh
-```
-
-# Manual Installation
-To install my bash profile manually, add a new entry in `~/.bash_profile` or `~/.bashrc`
-```
-echo "source ~/dotfiles/bash/.bash_profile" >> ~/.bash_profile
 ```
