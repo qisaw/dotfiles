@@ -26,7 +26,7 @@ Plug 'junegunn/fzf.vim'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'HerringtonDarkholme/yats.vim'
 Plug 'martinda/Jenkinsfile-vim-syntax'
-Plug 'iamcco/markdown-preview.nvim', { 'do': 'npm i cd app && npm i' }
+Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && npm i' }
 Plug 'aklt/plantuml-syntax'
 Plug 'tyru/open-browser.vim'
 Plug 'weirongxu/plantuml-previewer.vim'
@@ -34,6 +34,7 @@ Plug 'tpope/vim-rhubarb'
 Plug 'lifepillar/vim-solarized8'
 Plug 'itchyny/lightline.vim'
 Plug 'kamykn/spelunker.vim'
+Plug 'pantharshit00/vim-prisma'
 
 call plug#end()              " required
 filetype plugin indent on    " required

@@ -26,4 +26,5 @@ yarn add \
   coc-tslint-plugin \
   coc-sql \
   coc-go \
-  coc-swagger
+  coc-swagger \
+  coc-prisma
