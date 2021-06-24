@@ -1,4 +1,4 @@
-nnoremap <leader><leader>gs :Gstatus<CR>
+nnoremap <leader><leader>gs :Git<CR>
 nnoremap <leader><leader>gchb :Git checkout -b <space>
 nnoremap <leader><leader>gch :Git checkout <space>
 nnoremap <leader><leader>gp :Git push -u<CR>
