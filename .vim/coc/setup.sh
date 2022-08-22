@@ -28,4 +28,4 @@ yarn add \
   coc-go \
   coc-swagger \
   coc-prisma \
-  coc-vuetur
+  coc-vetur
