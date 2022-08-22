@@ -35,6 +35,8 @@ Plug 'lifepillar/vim-solarized8'
 Plug 'itchyny/lightline.vim'
 Plug 'kamykn/spelunker.vim'
 Plug 'pantharshit00/vim-prisma'
+Plug 'fgsch/vim-varnish'
+Plug 'vim-test/vim-test'
 
 call plug#end()              " required
 filetype plugin indent on    " required

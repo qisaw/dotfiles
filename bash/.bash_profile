@@ -25,6 +25,8 @@ alias gp="git push --follow-tags"
 alias gt="git tag"
 alias gpl="git pull --rebase"
 alias adbtcp="adb reverse tcp:9090 tcp:9090"
+alias intel="$env /usr/bin/arch -x86_64 /bin/zsh —-login"
+alias arm="$env /usr/bin/arch -arm64 /bin/zsh —-login"
 
 function parse_git_branch {
   git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ \1/' -e "s/ //"

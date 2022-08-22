@@ -18,7 +18,7 @@ yarn add \
   coc-tsserver \
   coc-yaml \
   coc-prettier \
-  coc-eslint \
+  coc-eslint8 \
   coc-docker \
   coc-vimlsp \
   coc-sh \
@@ -27,4 +27,5 @@ yarn add \
   coc-sql \
   coc-go \
   coc-swagger \
-  coc-prisma
+  coc-prisma \
+  coc-vuetur

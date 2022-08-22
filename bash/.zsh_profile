@@ -51,6 +51,9 @@ alias ysf='yarn start:dev:server'
 export NVM_DIR=~/.nvm
 source $(brew --prefix nvm)/nvm.sh
 
+alias intel="$env /usr/bin/arch -x86_64 /bin/zsh"
+alias arm="$env /usr/bin/arch -arm64 /bin/zsh"
+
 #[ -f ~/.fzf.bash ] && source ~/.fzf.bash
 
 # git
@@ -62,6 +65,12 @@ git config --global core.excludesfile ~/dotfiles/.gitignore
 defaults write -g InitialKeyRepeat -int 10 # normal minimum is 15 (225 ms)
 defaults write -g KeyRepeat -int 1 # normal minimum is 2 (30 ms)
 hidutil property --set '{"UserKeyMapping":[{"HIDKeyboardModifierMappingSrc":0x700000039,"HIDKeyboardModifierMappingDst":0x700000029}]}'
+
+defaults write com.microsoft.VSCode ApplePressAndHoldEnabled -bool false              # For VS Code
+defaults write com.microsoft.VSCodeInsiders ApplePressAndHoldEnabled -bool false      # For VS Code Insider
+defaults write com.visualstudio.code.oss ApplePressAndHoldEnabled -bool false         # For VS Codium
+defaults write com.microsoft.VSCodeExploration ApplePressAndHoldEnabled -bool false   # For VS Codium Exploration users
+defaults delete -g ApplePressAndHoldEnabled
 
 # kubectl
 source <(kubectl completion zsh)

@@ -2,3 +2,6 @@ tags
 tags.temp
 tags.lock
 .DS_STORE
+appy-production.hide.sh
+appy-staging.hide.sh
+*.tfvars
