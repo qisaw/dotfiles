@@ -13,6 +13,7 @@ fi
 # Change arguments to the extensions you need
 yarn add \
   coc-json \
+  # left out
   coc-jest \
   coc-css \
   coc-tsserver \
@@ -20,12 +21,15 @@ yarn add \
   coc-prettier \
   coc-eslint8 \
   coc-docker \
+  # this one is left out
   coc-vimlsp \
   coc-sh \
   coc-highlight \
+  # left out
   coc-tslint-plugin \
   coc-sql \
   coc-go \
   coc-swagger \
   coc-prisma \
+  # left out
   coc-vetur

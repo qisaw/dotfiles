@@ -50,3 +50,6 @@ nmap <leader><space> :b#<CR>
 
 " map escape to exit in terminal mode
 tnoremap <leader><leader>q <C-\><C-n>
+
+" @ to copy current file path to clipboard"
+:nnoremap %f :let @+=@%<cr>

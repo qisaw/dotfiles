@@ -13,12 +13,10 @@ Plug 'tpope/vim-surround'
 Plug 'scrooloose/nerdcommenter'
 Plug 'jiangmiao/auto-pairs'
 Plug 'easymotion/vim-easymotion'
-Plug 'mhartington/vim-typings'
 Plug 'airblade/vim-rooter'
-Plug 'nathanaelkane/vim-indent-guides'
 Plug 'hashivim/vim-terraform'
 Plug 'othree/javascript-libraries-syntax.vim'
-Plug 'prettier/vim-prettier', { 'do': 'npm install' }
+Plug 'prettier/vim-prettier', { 'do': 'npm install --legacy-peer-deps' }
 Plug 'jaawerth/nrun.vim'
 Plug 'tyrannicaltoucan/vim-deep-space'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
@@ -32,11 +30,31 @@ Plug 'tyru/open-browser.vim'
 Plug 'weirongxu/plantuml-previewer.vim'
 Plug 'tpope/vim-rhubarb'
 Plug 'lifepillar/vim-solarized8'
+Plug 'NLKNguyen/papercolor-theme'
 Plug 'itchyny/lightline.vim'
 Plug 'kamykn/spelunker.vim'
 Plug 'pantharshit00/vim-prisma'
-Plug 'fgsch/vim-varnish'
-Plug 'vim-test/vim-test'
+Plug 'github/copilot.vim'
+Plug 'folke/tokyonight.nvim'
+Plug 'EdenEast/nightfox.nvim'
+
+Plug 'neoclide/coc-json', { 'do': 'npm install' }
+Plug 'neoclide/coc-css', { 'do': 'npm install' }
+Plug 'neoclide/coc-tsserver', { 'do': 'npm install' }
+Plug 'neoclide/coc-yaml', { 'do': 'npm install' }
+Plug 'neoclide/coc-prettier', { 'do': 'npm install' }
+Plug 'neoclide/coc-eslint', { 'do': 'npm install' }
+Plug 'josa42/coc-docker', { 'do': 'npm install' }
+Plug 'josa42/coc-sh', { 'do': 'npm install' }
+Plug 'neoclide/coc-highlight', { 'do': 'npm install' }
+Plug 'fannheyward/coc-sql', { 'do': 'npm install' }
+"Plug 'pantharshit00/coc-prisma', { 'do': 'npm install', 'tag': 'v0.12.0' }
+Plug 'pantharshit00/coc-prisma', { 'do': 'npm install --legacy-peer-deps', 'tag': 'v0.12.0' }
+Plug 'amadeus/vim-mjml'
+
+
+
+
 
 call plug#end()              " required
 filetype plugin indent on    " required

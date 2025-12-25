@@ -2,11 +2,38 @@
   // this is a jsonc file that supports comments
   // symlink this to ~/.config/nvim/coc-settings.json
   // ln -s ~/dotfiles/.vim/plugins/coc-settings.json ~/.config/nvim/coc-settings.json
-  // "tsserver.npm": "/Users/wasiqkashkari/.nvm/versions/node/v12.14.1/bin/npm",
-  "coc.preferences.colorSupport": true,
-  "suggest.enablePreview": true,
+  "colors.enable": true,
   "diagnostic.checkCurrentLine": true,
-  "eslint.autoFixOnSave": true,
-  "javascript.format.enabled": true,
-  "javascript.showUnused": true
+  // "eslint.autoFixOnSave": true,
+  // "eslint.lintTask.options": [
+  //   ".",
+  //   "--ext",
+  //   ".ts",
+  //   "--ext",
+  //   ".tsx",
+  //   "--ext",
+  //   ".js",
+  //   "--ext",
+  //   ".jsx"
+  // ],
+  // "eslint.validate": [
+  //   "javascript",
+  //   "javascriptreact",
+  //   "typescript",
+  //   "typescriptreact"
+  // ],
+  "diagnostic.showUnused": true,
+  "coc.preferences.formatOnSave": true,
+  "coc.preferences.formatOnSaveFiletypes": ["*"],
+
+  "suggest.noselect": true,
+  "languageserver": {
+    "terraform": {
+      "command": "terraform-ls",
+      "args": ["serve"],
+      "filetypes": ["terraform", "tf"],
+      "initializationOptions": {},
+      "settings": {}
+    }
+  }
 }

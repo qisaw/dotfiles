@@ -1,6 +1,6 @@
 set laststatus=2
 let g:lightline = {
-      \ 'colorscheme': 'solarized',
+      \ 'colorscheme': 'PaperColor',
       \ 'component_function': {
       \   'gitbranch': 'FugitiveHead'
       \ },
