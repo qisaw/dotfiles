@@ -1,5 +1,7 @@
 # Vim
 
+> ⚠️ Archived: This Vim config is no longer maintained. Please use my actively maintained Neovim setup instead: [qisaw/nvim](https://github.com/qisaw/nvim).
+
 ## Prerequsites
 * [ctags](https://github.com/universal-ctags/homebrew-universal-ctags)
 * [nodeJS](https://github.com/nvm-sh/nvm)
