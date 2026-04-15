@@ -1,61 +1,22 @@
-export JAVA_HOME=$(/usr/libexec/java_home)
-export ANDROID_HOME="${HOME}/Library/Android/sdk"
-export PATH="${PATH}:$JAVA_HOME/bin"
-export PATH="$HOME/.fastlane/bin:$PATH"
-export PATH=${PATH}:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools
-export PATH="${PATH}:/Applications/Docker.app/Contents/Resources/bin"
 export REACT_EDITOR=nvim
 export EDITOR=nvim
 
-
 export GIT_EDITOR=nvim
-# When not using rosetta
-# eval "$(/opt/homebrew/bin/brew shellenv)"
 
 alias g="git"
 alias gc="git commit"
 alias gs="git status"
-alias gd="git diff"
-alias gl="git log"
 alias gan="git add"
 alias ga="git add -p"
 alias gch="git checkout"
 alias ghcb="git checkout -b"
-alias gb="git branch"
-alias gr="git reset"
 alias gp="git push --follow-tags"
-alias gt="git tag"
 alias gpl="git pull --rebase"
-alias adbtcp="adb reverse tcp:9090 tcp:9090"
-alias psc="cat package.json | jq .scripts"
-
-
-alias tm.ks='tmux kill-session'
-alias tm="tmux"
-
-# TERRAFORM
-alias tp='terraform plan -out=plan.out'
-alias ta='terraform apply plan.out'
-alias dc='docker-compose'
-alias d='docker'
-alias de='docker exec -it'
-
-# YARN
-alias y='yarn'
-alias yt='yarn test'
-alias yl='yarn lint'
-alias ys='yarn start:dev'
-alias ysf='yarn start:dev:server'
-
 
 # LOAD NVM
-export NVM_DIR=~/.nvm
-source $(brew --prefix nvm)/nvm.sh
-
-alias intel="$env /usr/bin/arch -x86_64 /bin/zsh"
-alias arm="$env /usr/bin/arch -arm64 /bin/zsh"
-
-#[ -f ~/.fzf.bash ] && source ~/.fzf.bash
+export NVM_DIR="$HOME/.nvm"
+[ -s "$HOMEBREW_PREFIX/opt/nvm/nvm.sh" ] && \. "$HOMEBREW_PREFIX/opt/nvm/nvm.sh" # This loads nvm
+[ -s "$HOMEBREW_PREFIX/opt/nvm/etc/bash_completion.d/nvm" ] && \. "$HOMEBREW_PREFIX/opt/nvm/etc/bash_completion.d/nvm" # This loads nvm bash_completion
 
 # git
 git config --global user.name "Wasiq Kashkari"
@@ -67,62 +28,7 @@ defaults write -g InitialKeyRepeat -int 10 # normal minimum is 15 (225 ms)
 defaults write -g KeyRepeat -int 1 # normal minimum is 2 (30 ms)
 hidutil property --set '{"UserKeyMapping":[{"HIDKeyboardModifierMappingSrc":0x700000039,"HIDKeyboardModifierMappingDst":0x700000029}]}'
 
-defaults write com.microsoft.VSCode ApplePressAndHoldEnabled -bool false              # For VS Code
-defaults write com.microsoft.VSCodeInsiders ApplePressAndHoldEnabled -bool false      # For VS Code Insider
-defaults write com.visualstudio.code.oss ApplePressAndHoldEnabled -bool false         # For VS Codium
-defaults write com.microsoft.VSCodeExploration ApplePressAndHoldEnabled -bool false   # For VS Codium Exploration users
-defaults delete -g ApplePressAndHoldEnabled
-
-# kubectl
-source <(kubectl completion zsh)
-
-alias ks='kubectl -n staging'
-alias kp='kubectl -n production'
-alias k='kubectl'
-complete -F __start_kubectl k
-
-alias hh='helm history --tls'
-alias hhj='helm history --tls -o yaml'
-alias h-sealed='helm sealed-secrets enc-dir secret-templates kubernetes-resources'
-
-export HELM_HOME=~/.helm
-
 # brew-file
 if [ -f $(brew --prefix)/etc/brew-wrap ];then
   source $(brew --prefix)/etc/brew-wrap
 fi
-
-export ZPLUG_HOME=/opt/homebrew/opt/zplug
-source $ZPLUG_HOME/init.zsh
-# Can manage local plugins
-# uncomment this when you have local plugins
-#zplug "~/.zsh", from:local
-
-# Load theme file
-zplug "lukechilds/zsh-better-npm-completion", defer:2
-zplug "buonomo/yarn-completion", defer:2
-
-# Install plugins if there are plugins that have not been installed
-if ! zplug check ; then
-  printf "Install? [y/N]: "
-  if read -q; then
-    echo; zplug install
-  fi
-fi
-
-# Then, source plugins and add commands to $PATH
-zplug load
-
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-
-source ~/.oh-my-zsh/themes/agnoster.zsh-theme
-
-# GO config
-export GOPATH="${HOME}/.go"
-export GOROOT="$(brew --prefix golang)/libexec"
-export PATH="$PATH:${GOPATH}/bin:${GOROOT}/bin"
-test -d "${GOPATH}" || mkdir "${GOPATH}"
-test -d "${GOPATH}/src/github.com" || mkdir -p "${GOPATH}/src/github.com"
-
-autoload bashcompinit && bashcompinit
-complete -C '/usr/local/bin/aws_completer' aws
