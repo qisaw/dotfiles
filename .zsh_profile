@@ -13,6 +13,9 @@ alias ghcb="git checkout -b"
 alias gp="git push --follow-tags"
 alias gpl="git pull --rebase"
 
+# add homebrew to path
+eval "$(/opt/homebrew/bin/brew shellenv zsh)"
+
 # LOAD NVM
 export NVM_DIR="$HOME/.nvm"
 [ -s "$HOMEBREW_PREFIX/opt/nvm/nvm.sh" ] && \. "$HOMEBREW_PREFIX/opt/nvm/nvm.sh" # This loads nvm
@@ -27,9 +30,6 @@ git config --global core.excludesfile ~/dotfiles/.gitignore
 defaults write -g InitialKeyRepeat -int 10 # normal minimum is 15 (225 ms)
 defaults write -g KeyRepeat -int 1 # normal minimum is 2 (30 ms)
 hidutil property --set '{"UserKeyMapping":[{"HIDKeyboardModifierMappingSrc":0x700000039,"HIDKeyboardModifierMappingDst":0x700000029}]}'
-
-# add homebrew to path
-eval "$(/opt/homebrew/bin/brew shellenv zsh)"
 
 # brew-file
 if [ -f $(brew --prefix)/etc/brew-wrap ];then
