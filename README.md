@@ -1,26 +1,23 @@
-# My Dotfiles
+# Pre-requisites
+1. You must have installed [homebrew](https://brew.sh/)
+2. You must have used brew-file to install the packages in my brewfile repository [here](https://github.com/qisaw/brewfile)
+3. It helps to have the [JetBrains Mono Nerd Font](https://www.nerdfonts.com/font-downloads) installed. You will already have it if you used the brewfile
 
-This repository contains all my dot files for setting up my environment
+# Manual Installation
+To install my zsh profile manually
+1. Install [oh-my-zsh](https://github.com/ohmyzsh/ohmyzsh)
+```
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+```
+2. Add a new entry in `~/.zshrc`
+```
+echo "source ~/dotfiles/.zsh_profile" >> ~/.zshrc
+source ~/.zshrc
+<OTHER_SECRETS, e.g. export OPENAI_KEY=sk-xxxxxx>"
+```
 
-| Order | Technology | Setup instructions |
-| :---: | ---------- | -------------------|
-| 1 | [Homebrew](https://brew.sh/) | To set up my homebrew packages, see instructions [here](./homebrew/README.md) |
-| 2 | [Bash](https://www.gnu.org/software/bash/) | To set up my bash config, see instructions [here](./bash/README.md) |
-| 3 | [Vim](https://www.vim.org/) | To set up vim, see the instructions [here](./.vim/README.md) |
-
-# Automatic Installation (Beta)
-To install all the above simply run the following command
-
-~~~
-./install/install.sh
-~~~
-
-**Note: This will install both `node` and `yarn` as they are requirements for a lot of the above.
-You can choose which node version to use by changing the following environment variable.
-Currently this defaults to 12.4.1.
-If you would like to change this, you will also need to update the version of node you use for coc-tsserver in the [coc-settings.json](./.vim/coc/coc-settings.json)**
-
-
-~~~
-NODE_VERSION_TO_INSTALL=12.4.1
-~~~
+<i>
+Note: 
+The zsh profile set the key repeat rate which only gets applied after you have logged in and out.
+If you want this straight away, after setting up the bash profle, log in and then out
+</i>
