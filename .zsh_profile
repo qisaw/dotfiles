@@ -7,7 +7,7 @@ alias g="git"
 alias gc="git commit"
 alias gs="git status"
 alias gan="git add"
-alias ga="git add -p"
+alias ga="git add -patch"
 alias gch="git checkout"
 alias ghcb="git checkout -b"
 alias gp="git push --follow-tags"
@@ -27,11 +27,14 @@ git config --global user.email "w.kashkari@outlook.com"
 git config --global core.excludesfile ~/dotfiles/.gitignore
 
 # key repeat rate
-defaults write -g InitialKeyRepeat -int 10 # normal minimum is 15 (225 ms)
+defaults write -g InitialKeyRepeat -int 5 # normal minimum is 15 (225 ms)
 defaults write -g KeyRepeat -int 1 # normal minimum is 2 (30 ms)
+# Remap caps lock to escape do I still need this now that I can do it in keyboard settings?
 hidutil property --set '{"UserKeyMapping":[{"HIDKeyboardModifierMappingSrc":0x700000039,"HIDKeyboardModifierMappingDst":0x700000029}]}'
 
 # brew-file
 if [ -f $(brew --prefix)/etc/brew-wrap ];then
   source $(brew --prefix)/etc/brew-wrap
 fi
+
+source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
